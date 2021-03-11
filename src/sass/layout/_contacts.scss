@@ -1,0 +1,41 @@
+.contacts {
+  min-width: 320px;
+  width: 100%;
+  background-color: #fff5f6;
+  &-list {
+    margin-bottom: 54px;
+  }
+
+  &-items {
+    width: 220px;
+    height: 427px;
+    padding: 43px 20px;
+
+    background: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &-cafe {
+      display: block;
+      //   width: 80px;
+      //   height: 16px;
+
+      background: #f0d1a5;
+      border-radius: 4px;
+
+      font-family: var(--main-font);
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.86;
+      /* or 22px */
+      letter-spacing: 0.04em;
+
+      color: #ffffff;
+    }
+    &-town {
+      color: red;
+    }
+  }
+}
