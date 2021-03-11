@@ -1,8 +1,25 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+// UTILS
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/visually-hidden';
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
-@import './test-drench'
+
+// BASE
+@import './base/base';
+@import './base/container';
+
+// COMPONENTS
+@import './components/button';
+@import './components/section-title';
+@import './components/social-links';
+
+// LAYOUT
+@import './layout/hero-header';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';
+
