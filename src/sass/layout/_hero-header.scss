@@ -84,3 +84,10 @@
   .nav-list {
     display: flex;
   }
+
+  .buy-btn {
+    display: none;
+    @include screen('desktop') {
+      display: block;
+    }
+  }
