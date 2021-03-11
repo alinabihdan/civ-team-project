@@ -34,13 +34,12 @@ li {
 
 body {
   margin: auto;
-  color: $primary-text-color;
-  background-color: $main-bg-color;
+  color: var(--dark-color);
+  background-color: var(--section-alt-background);
 
   font-weight: 400;
   font-family: var(--main-font);
 
-  &.modal-open {
-    overflow: hidden;
-  }
+  font-size: 14px;
+  line-height: 1.76;
 }
