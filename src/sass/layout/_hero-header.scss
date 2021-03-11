@@ -7,9 +7,9 @@
      display: block;
      width: 199px;
      height: 50px;
-     background-image: url();
+     background-image: url(../images/mobile/logo-mobile.png);
 
-     background-color: var(--accent-color);
+
    }
   
    .burger-btn {
@@ -73,4 +73,14 @@
   
   .mobile-nav-link {
     color: #FFFFFF;
+  }
+
+  .navigation {
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
+  }
+
+  .nav-list {
+    display: flex;
   }
