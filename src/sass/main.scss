@@ -3,9 +3,8 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
-
 // BASE
-@import './base/base';
+@import './base/common';
 @import './base/container';
 
 // COMPONENTS
@@ -22,4 +21,3 @@
 @import './layout/customer-reviews';
 @import './layout/contacts';
 @import './layout/footer';
-
