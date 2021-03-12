@@ -1,4 +1,7 @@
 .hero-header {
+  overflow: hidden;
+  width: 100%;
+  height: 502px;
   
   position: relative;
   background-color: var(--hero-background);
@@ -17,6 +20,7 @@
      display: block;
      width: 199px;
      height: 50px;
+     
      background-image: url(../images/mobile/logo-mobile.png);
      background-color: transparent;
 
@@ -114,6 +118,7 @@
 
     background-color: var(--label-title-color);
     border-radius: 50%;
+    
 
     .hero-wraper {
       position: absolute;
@@ -125,19 +130,20 @@
     content: "";
     
     display: block;
-    width: 171px;
+    width: 100%;
     height: 410px;
     background-image: url(../images/mobile/hero-icecream-mobile.png);
     background-position: 81px 9px;
     background-repeat: no-repeat;  
+    background-size: contain;
     
   }
 
   .hero-header-title {
     
     margin: 0;
-    padding-top: 193px;
-
+    margin-top: 137px;
+    display: inline-block;
     font-family: Titan One;
     font-weight: 400;
     font-size: 26px;
