@@ -1,9 +1,11 @@
 .hero-header {
+  
   position: relative;
   background-color: var(--hero-background);
 }
 
 .header {
+    
     position: absolute;
     
     width: 100%;
@@ -40,6 +42,7 @@
   }
 
   .mobile-menu {
+    z-index: 10;
     position: fixed;
     top: 0;
     right: 0;
@@ -101,7 +104,37 @@
     }
   }
 
+    .elipse {
+    position: absolute;
+    position: relative;
+    top: 77px;
+    left: 16px;
+    width: 346px;
+    height: 344px;
+
+    background-color: var(--label-title-color);
+    border-radius: 50%;
+
+    .hero-wraper {
+      position: absolute;
+    }
+
+  }
+
+  .elipse::after {
+    content: "";
+    
+    display: block;
+    width: 171px;
+    height: 410px;
+    background-image: url(../images/mobile/hero-icecream-mobile.png);
+    background-position: 81px 9px;
+    background-repeat: no-repeat;  
+    
+  }
+
   .hero-header-title {
+    
     margin: 0;
     padding-top: 193px;
 
@@ -123,8 +156,8 @@
   }
 
   .recipe-btn-list {
+    margin: 0;
     display: flex;
     margin-top: 19px;
   }
 
-  
