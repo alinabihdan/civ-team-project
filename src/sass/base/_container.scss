@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @include screen('mobile') {
+    width: 480px;
+  }
+  @include screen('tablet') {
+    width: 768px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  @include screen('desktop') {
+    width: 1280px;
+    padding-left: 114px;
+    padding-right: 114px;
+  }
+}
