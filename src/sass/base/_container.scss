@@ -1,4 +1,10 @@
 .container {
+    @media screen and (max-width: 767px) {
+        padding-top: 6px; 
+    }    
+}
+
+.container {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -18,3 +24,4 @@
     padding-right: 114px;
   }
 }
+
