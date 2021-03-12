@@ -137,6 +137,31 @@
     color: var(--contacts-text);
     cursor: pointer;
   }
+  &-btn-red {
+    display: flex;
+    align-items: center;
+    // align-content: center;
+    width: 161px;
+    height: 44px;
+    margin: 0 auto;
+    background-color: #d41342;
+    border-color: transparent;
+    border-radius: 22px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #ffffff;
+    &::after {
+      width: 12px;
+      height: 12px;
+      content: '';
+      background-image: url('/images/btn-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-left: 8px;
+    }
+  }
 }
 @media screen and (max-width: 479px) {
   .contacts {
