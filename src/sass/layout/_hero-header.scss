@@ -5,6 +5,8 @@
 
 .header {
     position: absolute;
+    
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,6 +16,7 @@
      width: 199px;
      height: 50px;
      background-image: url(../images/mobile/logo-mobile.png);
+     background-color: transparent;
 
 
    }
@@ -95,5 +98,25 @@
     display: none;
     @include screen('desktop') {
       display: block;
+    }
+  }
+
+  .hero-header-title {
+    margin: 0;
+    padding-top: 193px;
+
+    font-family: Titan One;
+    font-size: 26px;
+    line-height: 1.153;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+
+    .element {
+      font-size: 48px;
+      line-height: 96.5%;
+    
+      color: #D41443;
     }
   }
