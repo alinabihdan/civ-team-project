@@ -8,8 +8,8 @@
 
   &-items {
     min-width: 220px;
-    widows: 100%;
-    padding: 43px 20px;
+    // padding: 43px 20px;
+    padding: 19.5% 9.09%;
 
     background: #ffffff;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -19,22 +19,82 @@
     }
   }
   &-cafe {
-    width: 80px;
+    // 80px
+    max-width: 36.36%;
     text-align: center;
     background: #f0d1a5;
     border-radius: 4px;
 
     font-family: var(--main-font);
     font-weight: 500;
-    font-size: 12px;
+    // 12px
+    font-size: 0.857em;
     line-height: 1.86;
-    /* or 22px */
     letter-spacing: 0.04em;
-
     color: #ffffff;
+    margin-bottom: 25px;
   }
   &-town {
-    color: red;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.857em;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+  }
+  &-text {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.857em;
+    line-height: 1.5;
+    color: var(--contacts-text);
+
+    &::after {
+      width: 100%;
+      content: '';
+      border: 1px solid var(--review-decoration);
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+  &-workdays {
+    font-weight: 500;
+    font-size: 0.857em;
+    line-height: 1.86;
+  }
+  &-worktime {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.857em;
+    line-height: 1.86;
+    color: var(--label-title-color);
+  }
+  &-link-line {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.857em;
+    line-height: 1.5;
+    /* or 150% */
+    color: var(--contacts-text);
+    &::before {
+      width: 100%;
+      content: '';
+      border: 1px solid var(--review-decoration);
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+  &-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.857em;
+    line-height: 1.5;
+    /* or 150% */
+    color: var(--contacts-text);
   }
 }
 @include screen('mobile') {
