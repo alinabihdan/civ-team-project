@@ -1,8 +1,4 @@
 .contacts {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  min-width: 320px;
   width: 100%;
   background-color: #fff5f6;
 
@@ -11,7 +7,8 @@
   }
 
   &-items {
-    // width: 220px;
+    min-width: 220px;
+    widows: 100%;
     padding: 43px 20px;
 
     background: #ffffff;
@@ -39,4 +36,6 @@
   &-town {
     color: red;
   }
+}
+@include screen('mobile') {
 }
