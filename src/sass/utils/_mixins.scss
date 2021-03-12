@@ -57,7 +57,10 @@
 
 @mixin font($fs, $lh) {
   font-size: $fs;
-  line-height: decimal-round($lh/$fs, 2);
+  line-height: decimal-round(
+    $lh/$fs,
+    2
+  ); // "2" - количество знаков после запятой
 }
 
 // Использование
