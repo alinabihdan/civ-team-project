@@ -1,0 +1,42 @@
+//temp styles
+.header-container {
+  background-color: var(--hero-background);
+}
+//temp styles end
+
+.button {
+  display: inline-block;
+  padding: 0;
+
+  color: var(--accent-color);
+  background-color: var(--section-alt-background);
+
+  font-family: inherit;
+  font-weight: 700;
+  @include font(16px, 21px);
+  border: 0;
+  border-radius: 22px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.modal-btn {
+  display: none;
+
+  @include screen('tablet') {
+    display: initial;
+    width: 100%;
+    max-width: 186px;
+    min-height: 44px;
+  }
+
+  @include screen('desktop') {
+  }
+
+  & .icon-arrow {
+    margin-left: 13px;
+  }
+}
