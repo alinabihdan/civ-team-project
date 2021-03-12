@@ -1,14 +1,17 @@
 .contacts {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
   min-width: 320px;
   width: 100%;
   background-color: #fff5f6;
+
   &-list {
     margin-bottom: 54px;
   }
 
   &-items {
-    width: 220px;
-    // height: 427px;
+    // width: 220px;
     padding: 43px 20px;
 
     background: #ffffff;
