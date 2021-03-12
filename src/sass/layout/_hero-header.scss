@@ -1,4 +1,10 @@
+.hero-header {
+  position: relative;
+  background-color: var(--hero-background);
+}
+
 .header {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
