@@ -140,9 +140,10 @@
   &-btn-red {
     display: flex;
     align-items: center;
-    // align-content: center;
+    justify-content: space-around;
     width: 161px;
     height: 44px;
+    padding-left: 25px;
     margin: 0 auto;
     background-color: #d41342;
     border-color: transparent;
@@ -153,10 +154,10 @@
     line-height: 1.31;
     color: #ffffff;
     &::after {
-      width: 12px;
-      height: 12px;
-      content: '';
-      background-image: url('/images/btn-arrow.svg');
+      width: 8px;
+      height: 10px;
+      content: ' ';
+      background-image: url('../images/btn-arrow.svg');
       background-repeat: no-repeat;
       background-size: contain;
       margin-left: 8px;
