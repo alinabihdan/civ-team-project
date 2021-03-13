@@ -1,34 +1,96 @@
+// Падинги-топ пересмотреть учитывая все стили, вверху вылазит 6 рх и сверить с верхней секцией
 .advantages {
-  padding-top: 39px;
+  //   padding-top: 39px;
   padding-bottom: 97px;
+  background-color: var(--section-background);
 
   @include screen('tablet') {
-    padding-top: 66px;
+    //     padding-top: 66px;
     padding-bottom: 140px;
   }
   @include screen('desktop') {
-    padding-top: 39px;
+    //     padding-top: 39px;
     padding-bottom: 139px;
   }
 }
 
-// Проверить учитывая общие стили
-// .advantages .container {
-//   padding-top: 0;
-//   text-align: left;
-//   padding-right: 70px;
+@include screen('tablet') {
+  .advantages .container {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+@include screen('desktop') {
+  .advantages .container {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
 
-//   @include screen('tablet') {
-//     padding-right: 76px;
-//     margin: 0;
-//   }
-// }
+.advantages-list {
+  text-align: left;
+  @include screen('tablet') {
+    display: flex;
+  }
+}
 
+.advantages-item {
+  position: relative;
+  max-width: 230px;
+  @include screen('tablet') {
+    max-width: 180px;
+  }
+  @include screen('desktop') {
+    max-width: 330px;
+  }
+}
+
+.advantages-item::before {
+  display: block;
+  content: '';
+  margin-bottom: 16px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include screen('tablet') {
+    margin-bottom: 36px;
+  }
+
+  @include screen('desktop') {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages-item.milk::before {
+  width: 33px;
+  background-image: url(../images/icons/icon-milk.png);
+  @include screen('tablet') {
+    width: 36px;
+  }
+}
+
+.advantages-item.apples::before {
+  width: 50px;
+  background-image: url(../images/icons/icon-apples.png);
+}
+
+.advantages-item.heart::before {
+  width: 44px;
+  background-image: url(../images/icons/icon-heart.png);
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-item:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
 .advantages-item:not(:last-child) {
-  margin-bottom: 38px;
   @include screen('tablet') {
     margin-right: 60px;
-    margin-bottom: 0;
+  }
+  @include screen('desktop') {
+    margin-right: 30px;
   }
 }
 .advantages-number {
@@ -42,9 +104,11 @@
 
   @include screen('tablet') {
     @include font(48px, 55px);
+    margin-bottom: 13px;
   }
   @include screen('desktop') {
     @include font(58px, 66px);
+    margin-bottom: 15px;
   }
 }
 .advantages-text {
@@ -54,10 +118,9 @@
   @include screen('tablet') {
     @include font(14px, 24px);
   }
-}
 
-.advantages-list {
-  @include screen('tablet') {
-    display: flex;
+  @include screen('desktop') {
+    @include font(16px, 28px);
+    letter-spacing: 0.02em;
   }
 }

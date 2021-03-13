@@ -88,10 +88,8 @@
     min-width: 138px;
     min-height: 40px;
     @include font(14px, 18px);
-
   }
-  }
-
+}
 
 // красная якорная кнопка
 .anchor-btn.second {
@@ -105,13 +103,117 @@
   }
 
   .hero-header & {
-    margin-right: 8px;
+    margin-left: 8px;
   }
 
   @include screen('desktop') {
     min-width: 104px;
     .hero-header & {
       margin-right: 11px;
+    }
+  }
+}
+.contacts-btn-red {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 161px;
+  height: 44px;
+  padding-left: 17.84px;
+  padding-right: 17.84px;
+  margin: 0 auto;
+  background-color: var(--bgc-contacts-btn);
+  border-color: transparent;
+  border-radius: 22px;
+  outline: none;
+  margin-bottom: 10px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--text-contacts-btn-red);
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    background-color: var(--accent-contacts-btn-red);
+  }
+  &::after {
+    position: absolute;
+    right: 17.84px;
+    bottom: 14px;
+    width: 8px;
+    height: 10px;
+    content: '';
+    background-image: url('../images/btn-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.contacts-btn-white {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 161px;
+  height: 44px;
+  padding-left: 32px;
+  padding-right: 17.84px;
+  margin: 0 auto;
+  background-color: var(--bgc-contacts-btn-white);
+  border-color: transparent;
+  border-radius: 22px;
+  outline: none;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--accent-color);
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    background-color: var(--accent-contacts-btn-white);
+  }
+  &::after {
+    position: absolute;
+    right: 31.33px;
+    bottom: 14px;
+    width: 8px;
+    height: 10px;
+    content: '';
+    background-image: url('../images/btn-arrow-red.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@include screen('tablet') {
+  .contacts-btn-red {
+    width: 191.45px;
+    padding-left: 30px;
+    margin-bottom: 0px;
+    &::after {
+      right: 34px;
+    }
+  }
+  .contacts-btn-white {
+    width: 174.05px;
+    padding-left: 37.71px;
+    &::after {
+      right: 38.63px;
+    }
+  }
+}
+@include screen('desktop') {
+  .contacts-btn-red {
+    width: 198px;
+    padding-left: 35px;
+    &::after {
+      right: 35.96px;
+    }
+  }
+  .contacts-btn-white {
+    width: 180px;
+    padding-left: 39px;
+    &::after {
+      right: 39.96px;
     }
   }
 }
