@@ -24,5 +24,52 @@
     @include screen('desktop') {
         margin-bottom: 15px;
     }
+}
+
+.swiper-text-wrapper {
+    background-color: var(--slider-background);
+    width: 100%;
+    padding: 43px 50px 20px 50px;
+
+    @include screen('tablet') {
+        width: 620px;
+        height: 164px;    
+        padding: 40px 36px 28px 60px;
+    }
+
+    @include screen('desktop') {
+        width: 926px;
+        height: 138px;
+        padding: 45px 54px 30px 59px;
+    }
+}
+
+.review-text {
+    font-weight: 500;
+    @include font(12px, 30px);
+    text-align: center;
+    letter-spacing: 0.04em;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 29px,
+        var(--review-decoration) 30px,
+        transparent 30px,
+    );
+
+    @include screen('tablet') {
+        @include font(14px, 32px);
+    }
+
+    @include screen('desktop') {
+        @include font(16px, 31px);
+        background-image: repeating-linear-gradient(
+            to bottom,
+            transparent 0px,
+            transparent 28px,
+            var(--review-decoration) 29px,
+            transparent 29px,
+        );
+    }
 
 }
