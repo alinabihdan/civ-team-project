@@ -81,8 +81,14 @@
   color: var(--accent-color);
   background-color: var(--section-alt-background);
   min-width: 82.8px;
+  .hero-header & {
+  margin-left: 8px;
+}
 
   @include screen('desktop') {
     min-width: 138px;
+    .hero-header & {
+      margin-left: 11px;
+    }
   }
 }
