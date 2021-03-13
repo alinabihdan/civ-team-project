@@ -45,6 +45,10 @@
 
   .footer & {
     text-align: left;
+
+    @include screen('tablet') {
+      letter-spacing: 0.06em;
+    }
   }
 }
 
@@ -64,5 +68,11 @@
   .footer & {
     margin-bottom: 17px;
     text-align: left;
+
+    @include screen('tablet') {
+      margin-bottom: 16px;
+
+      letter-spacing: 0.04em;
+    }
   }
 }

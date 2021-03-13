@@ -45,6 +45,13 @@
 
   .footer & {
     padding-bottom: 43px;
+
+    @include screen('tablet') {
+      display: flex;
+      justify-content: space-between;
+
+      padding-bottom: 91px;
+    }
   }
 
   .footer-copyright & {

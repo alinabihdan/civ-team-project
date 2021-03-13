@@ -34,6 +34,10 @@
   font-weight: 700;
 
   border-top: 1px solid var(--review-decoration);
+
+  @include screen('tablet') {
+    line-height: 1.86;
+  }
 }
 
 .copyright {
@@ -41,4 +45,10 @@
   margin-right: auto;
 
   max-width: 149px;
+
+  @include screen('tablet') {
+    width: 100%;
+    max-width: initial;
+    text-align: center;
+  }
 }
