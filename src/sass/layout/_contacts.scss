@@ -137,77 +137,6 @@
     color: var(--contacts-text);
     cursor: pointer;
   }
-  &-btn-red {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 161px;
-    height: 44px;
-    padding-left: 17.84px;
-    padding-right: 17.84px;
-    margin: 0 auto;
-    background-color: #d41342;
-    border-color: transparent;
-    border-radius: 22px;
-    outline: none;
-    margin-bottom: 10px;
-
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.31;
-    color: #ffffff;
-    cursor: pointer;
-    &:focus,
-    &:hover {
-      background-color: #c7133e;
-    }
-    &::after {
-      position: absolute;
-      right: 17.84px;
-      bottom: 14px;
-      width: 8px;
-      height: 10px;
-      content: '';
-      background-image: url('../images/btn-arrow.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
-  &-btn-white {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 161px;
-    height: 44px;
-    padding-left: 32px;
-    padding-right: 17.84px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-color: transparent;
-    border-radius: 22px;
-    outline: none;
-
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.31;
-    color: #d41443;
-    cursor: pointer;
-    &:focus,
-    &:hover {
-      background-color: #ecebeb;
-    }
-    &::after {
-      position: absolute;
-      right: 31.33px;
-      bottom: 14px;
-      width: 8px;
-      height: 10px;
-      content: '';
-      background-image: url('../images/btn-arrow-red.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
 }
 @media screen and (max-width: 479px) {
   .contacts {
@@ -295,6 +224,12 @@
         margin-bottom: 30px;
       }
     }
+    &-btn-list {
+      display: flex;
+      justify-content: space-between;
+      width: 380px;
+      margin: 0 auto;
+    }
   }
 }
 @include screen('desktop') {
@@ -345,6 +280,12 @@
         margin-top: 32px;
         margin-bottom: 32px;
       }
+    }
+    &-btn-list {
+      display: flex;
+      justify-content: space-between;
+      width: 393px;
+      margin: 0 auto;
     }
   }
 }
