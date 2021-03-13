@@ -1,10 +1,25 @@
 .hero-header {
   overflow: hidden;
   width: 100%;
-  height: 502px;
+  height: 488px;
   
   position: relative;
   background-color: var(--hero-background);
+
+  @include screen('tablet') {
+    height: 399px;
+    background-image: url(../images/tablet/hero-icecream-tablet.png), url(../images/tablet/Ellipse-teblet.png);
+    background-repeat: no-repeat;
+    background-position:  49vw 63px, 40vw 35px;
+  }
+
+  @include screen('desktop') {
+    height: 665px;
+    background-image: url(../images/desktop/hero-icecream-desktop.png), url(../images/desktop/Ellipse-desktop.png);
+    background-repeat: no-repeat;
+    background-position:  49vw 108px, 40vw 52px;
+  }
+
 }
 
 .header {
@@ -104,6 +119,10 @@
   }
   
   .mobile-nav-link {
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.285;
     color: #FFFFFF;
   }
 
@@ -122,7 +141,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 37px ;
-    width: 160px;
     height: 44px;
 
     display: none;
@@ -135,8 +153,9 @@
     
   }
 
- 
+  @media screen and (max-width: 767px) {
     .elipse {
+  
     position: absolute;
     position: relative;
     top: 77px;
@@ -153,7 +172,7 @@
       margin-left: auto;
       
     }
-
+   
   }
 
   .elipse::after {
@@ -168,11 +187,26 @@
     background-size: contain;
     
   }
+}
+
+  .hero-wraper {
+    margin-top: 137px;
+    max-width: 218px;
+
+    @include screen('tablet') {
+      margin-top: 15px;
+      max-width: 162px;
+  }
+    @include screen('desktop') {
+      margin-top: 84px;
+      max-width: 277px;
+  }
+}
 
   .hero-header-title {
-    
+   
     margin: 0;
-    margin-top: 137px;
+    
     display: inline-block;
     font-family: Titan One;
     font-weight: 400;
@@ -183,17 +217,60 @@
     
     color: #FFFFFF;
 
+    @include screen('tablet') {
+   
+      margin-top: 102px;
+      font-size: 22px;
+      line-height: 1.136;
+    
+  }
+
+  @include screen('desktop') {
+   
+    margin-top: 102px;
+    font-size: 38px;
+    line-height: 1.157;
+  
+}
     .element {
       font-size: 48px;
       line-height: 96.5%;
     
       color: #D41443;
+
+      @include screen('tablet') {
+        font-size: 34px;
+        line-height: 90.5%;
+      }
+
+      @include screen('desktop') {
+        font-size: 58px;
+        line-height: 90.5%;
+      }
+
     }
   }
+
+
+
+
 
   .recipe-btn-list {
     margin: 0;
     display: flex;
     margin-top: 19px;
   }
+
+  .nav-item:not(:last-child) {
+   margin-right: 35px;
+  }
+
+  .nav-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,312;
+    color: #FFFFFF;
+  }
+
+
 
