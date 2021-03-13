@@ -1,0 +1,15 @@
+.customers-review {
+    padding-top: 80px;
+    padding-bottom: 170px;
+
+    @include screen('tablet') {
+        padding-top: 121px;
+        padding-bottom: 197px;
+    }
+
+    @include screen('desktop') {
+        padding-top: 123px;
+        padding-bottom: 235px;
+    }
+
+}

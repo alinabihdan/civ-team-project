@@ -2,12 +2,17 @@
   $mobile: '(min-width: 480px)';
   $desktop: '(min-width: 1280px)'; // Переменная со значением desktop размера
   $tablet: '(min-width: 768px)'; // Переменная со значением tablet размера
+
   @if $size == desktop {
     @media only screen and #{$desktop} {
       @content;
     }
   } @else if $size == tablet {
     @media only screen and #{$tablet} {
+      @content;
+    }
+  } @else if $size == mobile {
+    @media only screen and #{$mobile} {
       @content;
     }
   }
