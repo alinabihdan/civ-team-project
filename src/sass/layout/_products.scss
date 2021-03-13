@@ -1,6 +1,7 @@
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
+
   @media screen and (min-width: 768px) {
     padding-top: 122px;
     padding-bottom: 112px;
@@ -9,10 +10,12 @@
     padding-top: 127px;
     padding-bottom: 119px;
   }
+
   .section{
     &-subtitle {
       padding-bottom: 15px;
     }
+
     &-title {
       padding-bottom: 144px;
       @media screen and (min-width: 768px) {
@@ -47,13 +50,13 @@
     text-transform: uppercase;
     color: var(--section-alt-background);
     margin-bottom: 30px;
+
     @media screen and (min-width: 1280px) {
       margin-bottom: 32px;
       font-size: 30px;
       line-height: 1.13;
     }
   }
-  
   &-description {
     font-family: var(--main-font);
     font-style: normal;
@@ -64,6 +67,7 @@
     letter-spacing: 0.04em;
     color: var(--section-alt-background);
     margin-bottom: 30px;
+
     @media screen and (min-width: 768px) {
       line-height: 176%;
       margin-bottom: 40px;
@@ -83,6 +87,7 @@
     padding-top: 161px;
     &:not(:last-child) {
       margin-bottom: 130px;
+
       @media screen and (min-width: 768px) {
         margin-right: 20px;
         margin-bottom: 0;
@@ -91,6 +96,7 @@
         margin-right: 24px;
       }
     }
+
     @media screen and (min-width: 768px) {
       padding-left: 11px;
       padding-right: 11px;
@@ -102,14 +108,17 @@
       padding-top: 163px;
     }
   }
+
   &-icecream {
     background-color: var(--hero-background);
     border-radius: 24px;
   }
+
   &-icecoffee {
     background-color: var(--ice-coffe-color);
     border-radius: 24px;
   }
+
   &-milkshakes {
     background-color: var(--milkshakes-color);
     border-radius: 24px;
@@ -130,8 +139,21 @@
   @media screen and (min-width: 1280px) {
     margin-bottom: 50px;
   }
+
   &__icon{
     fill: var(--dark-btn-hover-bg-color);
+  }
+}
+
+.image-absolute {
+  position: absolute;
+  bottom: 350px;
+  
+  @media screen and (min-width: 768px) {
+    bottom: 361px;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 400px;
   }
 }
 
@@ -141,17 +163,6 @@
   margin-bottom: 30px;
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
-  }
-}
-
-.image-absolute {
-  position: absolute;
-  bottom: 350px;
-  @media screen and (min-width: 768px) {
-    bottom: 361px;
-  }
-  @media screen and (min-width: 1280px) {
-    bottom: 400px;
   }
 }
 
