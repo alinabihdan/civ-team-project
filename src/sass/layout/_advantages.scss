@@ -1,28 +1,17 @@
+// Падинги вверху учитывает все стили, вылазит 6 рх
 .advantages {
-  padding-top: 39px;
+  //   padding-top: 39px;
   padding-bottom: 97px;
 
   @include screen('tablet') {
-    padding-top: 66px;
+    //     padding-top: 66px;
     padding-bottom: 140px;
   }
   @include screen('desktop') {
-    padding-top: 39px;
+    //     padding-top: 39px;
     padding-bottom: 139px;
   }
 }
-
-// Проверить учитывая общие стили
-// .advantages .container {
-//   padding-top: 0;
-//   text-align: left;
-//   padding-right: 70px;
-
-//   @include screen('tablet') {
-//     padding-right: 76px;
-//     margin: 0;
-//   }
-// }
 
 .advantages-item:not(:last-child) {
   margin-bottom: 38px;
