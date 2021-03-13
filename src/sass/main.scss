@@ -2,6 +2,7 @@
 @import './utils/mixins';
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/swiper';
 
 // BASE
 @import './base/common';
@@ -11,6 +12,7 @@
 @import './components/button';
 @import './components/section-title';
 @import './components/social-links';
+@import './components/section-title';
 
 // LAYOUT
 @import './layout/hero-header';
