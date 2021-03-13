@@ -5,6 +5,12 @@
   
   position: relative;
   background-color: var(--hero-background);
+
+  @include screen('tablet') {
+    background-image: url(../images/tablet/hero-icecream-tablet.png), url(../images/Ellipse-teblet.png);
+    background-repeat: no-repeat;
+    background-position:  49vw 63px, 40vw 35px;
+  }
 }
 
 .header {
