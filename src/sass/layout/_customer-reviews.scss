@@ -11,5 +11,18 @@
         padding-top: 123px;
         padding-bottom: 235px;
     }
+}
+
+.swiper-image {
+    margin: 0 auto;
+    margin-bottom: 29px;
+
+    @include screen('tablet') {
+        margin-bottom: 19px;
+    }
+
+    @include screen('desktop') {
+        margin-bottom: 15px;
+    }
 
 }
