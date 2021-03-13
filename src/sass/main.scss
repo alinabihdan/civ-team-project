@@ -5,13 +5,14 @@
 
 
 // BASE
-@import './base/base';
+@import './base/common';
 @import './base/container';
 
 // COMPONENTS
 @import './components/button';
 @import './components/section-title';
 @import './components/social-links';
+@import './components/section-title';
 
 // LAYOUT
 @import './layout/hero-header';
@@ -22,4 +23,3 @@
 @import './layout/customer-reviews';
 @import './layout/contacts';
 @import './layout/footer';
-

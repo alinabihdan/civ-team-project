@@ -1,0 +1,332 @@
+:root {
+  --hero-background: #ffb8ca;
+  --section-background: #fff5f6;
+  --section-alt-background: #ffffff;
+  --accent-color: #d41443;
+  --label-title-color: #ffa5ba;
+  --slider-background: #fafafa;
+  --review-decoration: #e1e1e1;
+  --pagination-color: #d9d9d9;
+  --footer-accent: #fea5bb;
+  --ice-coffe-color: #f0d1a5;
+  --milkshakes-color: #c2e297;
+  --dark-color: #000000;
+  --logo-title-font: 'Titan One', cursive;
+  --main-font: 'DM Sans', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* RESETS */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* RESETS end */
+/* ============================== */
+body {
+  margin: auto;
+  color: var(--dark-color);
+  background-color: var(--section-alt-background);
+  font-weight: 400;
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.76;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-top: 6px;
+  }
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 114px;
+    padding-right: 114px;
+  }
+}
+
+.header-container {
+  background-color: var(--hero-background);
+}
+
+.button {
+  display: inline-block;
+  padding: 0;
+  color: var(--accent-color);
+  background-color: var(--section-alt-background);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border: 0;
+  border-radius: 22px;
+}
+
+.button:hover, .button:focus {
+  cursor: pointer;
+}
+
+.modal-btn {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-btn {
+    display: initial;
+    width: 100%;
+    max-width: 186px;
+    min-height: 44px;
+  }
+}
+
+.modal-btn .icon-arrow {
+  margin-left: 13px;
+}
+
+.btn {
+  margin: 20px;
+}
+
+.anchor-btn {
+  display: block;
+  color: var(--section-alt-background);
+  background-color: var(--accent-color);
+  height: 24px;
+  min-width: 62.4px;
+  border: 0;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: center;
+}
+
+.hero-header {
+  overflow: hidden;
+  width: 100%;
+  height: 502px;
+  position: relative;
+  background-color: var(--hero-background);
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo {
+  display: block;
+  width: 199px;
+  height: 50px;
+  background-image: url(../images/mobile/logo-mobile.png);
+  background-color: transparent;
+}
+
+.header .burger-btn {
+  padding: 0;
+  background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+  height: 12px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .header .burger-btn {
+    display: none;
+  }
+}
+
+.header .logo-icon {
+  display: block;
+  fill: var(--accent-color);
+}
+
+.mobile-menu {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 78vw;
+  height: 100vh;
+  padding: 60px 20px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  background-color: #E17992;
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+
+.mobile-menu.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile-menu-close-icon {
+  display: block;
+  fill: #fff;
+}
+
+.mobile-menu-close {
+  color: #fff;
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-navigation {
+  margin-top: 32px;
+}
+
+.mobile-nav-item:not(:first-child) {
+  margin-top: 22px;
+}
+
+.mobile-nav-link {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1279px) {
+  .navigation {
+    display: none;
+  }
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.buy-btn {
+  display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .buy-btn {
+    display: block;
+  }
+}
+
+.elipse {
+  position: absolute;
+  position: relative;
+  top: 77px;
+  left: 16px;
+  width: 346px;
+  height: 344px;
+  background-color: var(--label-title-color);
+  border-radius: 50%;
+}
+
+.elipse .hero-wraper {
+  position: absolute;
+}
+
+.elipse::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 410px;
+  background-image: url(../images/mobile/hero-icecream-mobile.png);
+  background-position: 81px 9px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero-header-title {
+  margin: 0;
+  margin-top: 137px;
+  display: inline-block;
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.153;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hero-header-title .element {
+  font-size: 48px;
+  line-height: 96.5%;
+  color: #D41443;
+}
+
+.recipe-btn-list {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 19px;
+}
+/*# sourceMappingURL=main.css.map */
