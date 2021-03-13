@@ -1,4 +1,4 @@
-// Падинги вверху учитывает все стили, вылазит 6 рх
+// Падинги вверху пересмотреть учитывая все стили, вверху вылазит 6 рх
 .advantages {
   //   padding-top: 39px;
   padding-bottom: 97px;
@@ -11,6 +11,38 @@
     //     padding-top: 39px;
     padding-bottom: 139px;
   }
+}
+
+.advantages-list {
+  text-align: left;
+  @include screen('tablet') {
+    display: flex;
+  }
+}
+
+.advantages-item {
+  position: relative;
+}
+.advantages-item::before {
+  display: block;
+  content: '';
+  margin-bottom: 16px;
+  height: 50px;
+  background-position: center;
+}
+.advantages-item.milk::before {
+  width: 33px;
+  background-image: url(../images/icons/icon-milk.png);
+}
+
+.advantages-item.apples::before {
+  width: 50px;
+  background-image: url(../images/icons/icon-apples.png);
+}
+
+.advantages-item.heart::before {
+  width: 44px;
+  background-image: url(../images/icons/icon-heart.png);
 }
 
 .advantages-item:not(:last-child) {
@@ -42,11 +74,5 @@
 
   @include screen('tablet') {
     @include font(14px, 24px);
-  }
-}
-
-.advantages-list {
-  @include screen('tablet') {
-    display: flex;
   }
 }
