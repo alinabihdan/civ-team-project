@@ -2,6 +2,7 @@
 .advantages {
   padding-top: 39px;
   padding-bottom: 97px;
+  background-color: var(--section-background);
 
   @include screen('tablet') {
     //     padding-top: 66px;
@@ -43,6 +44,7 @@
     max-width: 330px;
   }
 }
+
 .advantages-item::before {
   display: block;
   content: '';
@@ -50,13 +52,16 @@
   height: 50px;
   background-position: center;
   background-repeat: no-repeat;
+
   @include screen('tablet') {
     margin-bottom: 36px;
   }
+
   @include screen('desktop') {
     margin-bottom: 40px;
   }
 }
+
 .advantages-item.milk::before {
   width: 33px;
   background-image: url(../images/icons/icon-milk.png);
@@ -74,16 +79,15 @@
   width: 44px;
   background-image: url(../images/icons/icon-heart.png);
 }
+
 @media screen and (max-width: 767px) {
   .advantages-item:not(:last-child) {
     margin-bottom: 38px;
   }
 }
 .advantages-item:not(:last-child) {
-  // margin-bottom: 38px;
   @include screen('tablet') {
     margin-right: 60px;
-    // margin-bottom: 0;
   }
   @include screen('desktop') {
     margin-right: 30px;
@@ -114,6 +118,7 @@
   @include screen('tablet') {
     @include font(14px, 24px);
   }
+
   @include screen('desktop') {
     @include font(16px, 28px);
     letter-spacing: 0.02em;
