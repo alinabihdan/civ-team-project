@@ -156,6 +156,11 @@
     font-size: 16px;
     line-height: 1.31;
     color: #ffffff;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+      background-color: #c7133e;
+    }
     &::after {
       position: absolute;
       right: 17.84px;
@@ -181,12 +186,16 @@
     border-color: transparent;
     border-radius: 22px;
     outline: none;
-    margin-bottom: 10px;
 
     font-weight: bold;
     font-size: 16px;
     line-height: 1.31;
     color: #d41443;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+      background-color: #ecebeb;
+    }
     &::after {
       position: absolute;
       right: 31.33px;
@@ -209,7 +218,7 @@
     }
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .contacts {
     &-items {
       width: 350px;
