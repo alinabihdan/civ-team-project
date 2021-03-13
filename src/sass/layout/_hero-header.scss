@@ -31,9 +31,14 @@
     @include screen('desktop') {
       display: none;
     }
+    @include screen('tablet') {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+
 
      padding: 0;
-     background-color: var(--accent-color);
+     background-color: transparent;
      border: none;
      cursor: pointer;
      height: 12px;
@@ -46,6 +51,10 @@
   }
 
   .mobile-menu {
+    @include screen('tablet') {
+      width: 33vw;
+    }
+
     z-index: 10;
     position: fixed;
     top: 0;
@@ -68,8 +77,6 @@
   }
   
   .mobile-menu-close {
-    color: #fff;
-  
     position: absolute;
     top: 23px;
     right: 28px;
@@ -78,7 +85,16 @@
     border: none;
     cursor: pointer;
   }
-  
+
+  .mobile-buy-btn {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 43px ;
+    width: 186px;
+    height: 44px;
+  }  
+
   .mobile-navigation {
     margin-top: 32px;
   }
@@ -102,12 +118,24 @@
   }
 
   .buy-btn {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 37px ;
+    width: 160px;
+    height: 44px;
+
     display: none;
     @include screen('desktop') {
-      display: block;
+      display: inline-flex;
     }
+    @include screen('tablet') {
+      display: inline-flex;
+    }
+    
   }
 
+ 
     .elipse {
     position: absolute;
     position: relative;
@@ -122,6 +150,8 @@
 
     .hero-wraper {
       position: absolute;
+      margin-left: auto;
+      
     }
 
   }

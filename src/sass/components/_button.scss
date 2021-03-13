@@ -95,11 +95,17 @@
 .anchor-btn.second {
   color: var(--section-alt-background);
   background-color: var(--accent-color);
-
   min-width: 83px;
+
+  .hero-header & {
+  margin-left: 8px;
+}
 
   @include screen('desktop') {
     min-width: 138px;
+    .hero-header & {
+      margin-left: 11px;
+    }
   }
 
   &:hover,
