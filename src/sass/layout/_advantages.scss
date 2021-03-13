@@ -1,15 +1,15 @@
 // Падинги-топ пересмотреть учитывая все стили, вверху вылазит 6 рх и сверить с верхней секцией
 .advantages {
-  //   padding-top: 39px;
+  padding-top: 39px;
   padding-bottom: 97px;
   background-color: var(--section-background);
 
   @include screen('tablet') {
-    //     padding-top: 66px;
+    padding-top: 66px;
     padding-bottom: 140px;
   }
   @include screen('desktop') {
-    //     padding-top: 39px;
+    padding-top: 39px;
     padding-bottom: 139px;
   }
 }
@@ -64,21 +64,45 @@
 
 .advantages-item.milk::before {
   width: 33px;
-  background-image: url(../images/icons/icon-milk.png);
+  background-image: url('../images/icons/icon-milk.png');
   @include screen('tablet') {
     width: 36px;
   }
 }
 
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .advantages-item.milk::before {
+//     background-image: url('../images/icons/icon-milk@2x.png');
+//   }
+// }
+
 .advantages-item.apples::before {
   width: 50px;
-  background-image: url(../images/icons/icon-apples.png);
+  background-image: url('../images/icons/icon-apples.png');
 }
+
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .advantages-item.apples::before {
+//     background-image: url('../images/icons/icon-apples@2x.png');
+//   }
+// }
 
 .advantages-item.heart::before {
   width: 44px;
-  background-image: url(../images/icons/icon-heart.png);
+  background-image: url('../images/icons/icon-heart.png');
 }
+
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .advantages-item.heart::before {
+//     background-image: url('../images/icons/icon-heart@2x.png');
+//   }
+// }
 
 @media screen and (max-width: 767px) {
   .advantages-item:not(:last-child) {
