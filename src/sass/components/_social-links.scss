@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   width: 152px;
+  margin-left: auto;
+  margin-bottom: 46px;
 
   @include screen('tablet') {
     width: 162px;
