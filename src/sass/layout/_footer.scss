@@ -5,7 +5,10 @@
 
 .footer-description-wrapper {
   max-width: 232px;
-  margin-bottom: 42px;
+
+  @include screen('desktop') {
+    max-width: initial;
+  }
 }
 
 .footer-contacts-wrapper {
