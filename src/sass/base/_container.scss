@@ -4,24 +4,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-
-  .header & {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media screen and (max-width: 767px) {
-      padding-top: 6px;
-    }
-    @include screen('tablet') {
-      padding-top: 37px;
-    }
-  }
-
-  .hero & {
-    width: 100vw;
-  }
+  outline: $temp-outline;
 
   @include screen('mobile') {
     width: 480px;
@@ -42,7 +25,30 @@
     }
   }
 
+  .header & {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 6px;
+    }
+    @include screen('tablet') {
+      padding-top: 37px;
+    }
+  }
+
+  .hero & {
+    width: 100vw;
+  }
+
   .footer & {
-    background-color: var(--section-background);
+    padding-bottom: 43px;
+  }
+
+  .footer-copyright & {
+    padding-top: 22px;
+    padding-bottom: 25px;
   }
 }
