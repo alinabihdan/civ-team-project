@@ -31,9 +31,14 @@
     @include screen('desktop') {
       display: none;
     }
+    @include screen('tablet') {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+
 
      padding: 0;
-     background-color: var(--accent-color);
+     background-color: transparent;
      border: none;
      cursor: pointer;
      height: 12px;
@@ -106,6 +111,10 @@
     @include screen('desktop') {
       display: block;
     }
+    @include screen('tablet') {
+      display: block;
+    }
+    
   }
 
     .elipse {
@@ -122,6 +131,8 @@
 
     .hero-wraper {
       position: absolute;
+      margin-left: auto;
+      
     }
 
   }
