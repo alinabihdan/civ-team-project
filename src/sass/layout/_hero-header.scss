@@ -7,6 +7,7 @@
   background-color: var(--hero-background);
 
   @include screen('tablet') {
+    height: 399px;
     background-image: url(../images/tablet/hero-icecream-tablet.png), url(../images/tablet/Ellipse-teblet.png);
     background-repeat: no-repeat;
     background-position:  49vw 63px, 40vw 35px;
