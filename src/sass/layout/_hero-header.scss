@@ -197,3 +197,14 @@
     margin-top: 19px;
   }
 
+  .nav-item:not(:last-child) {
+   margin-right: 35px;
+  }
+
+  .nav-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,312;
+    color: #FFFFFF;
+  }
+
