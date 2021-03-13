@@ -7,10 +7,18 @@
   background-color: var(--hero-background);
 
   @include screen('tablet') {
-    background-image: url(../images/tablet/hero-icecream-tablet.png), url(../images/Ellipse-teblet.png);
+    background-image: url(../images/tablet/hero-icecream-tablet.png), url(../images/tablet/Ellipse-teblet.png);
     background-repeat: no-repeat;
     background-position:  49vw 63px, 40vw 35px;
   }
+
+  @include screen('desktop') {
+    height: 665px;
+    background-image: url(../images/desktop/hero-icecream-desktop.png), url(../images/desktop/Ellipse-desktop.png);
+    background-repeat: no-repeat;
+    background-position:  49vw 108px, 40vw 52px;
+  }
+
 }
 
 .header {
