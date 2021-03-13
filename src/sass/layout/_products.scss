@@ -5,6 +5,10 @@
     padding-top: 122px;
     padding-bottom: 112px;
   }
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
   .section{
     &-subtitle {
       padding-bottom: 15px;
@@ -13,6 +17,9 @@
       padding-bottom: 144px;
       @media screen and (min-width: 768px) {
         padding-bottom: 150px;
+      }
+      @media screen and (min-width: 1280px) {
+        padding-bottom: 259px;
       }
     }
   }
@@ -35,6 +42,11 @@
     text-transform: uppercase;
     color: var(--section-alt-background);
     margin-bottom: 30px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 32px;
+      font-size: 30px;
+      line-height: 1.13;
+    }
   }
   
   &-description {
@@ -51,6 +63,10 @@
       line-height: 176%;
       margin-bottom: 40px;
     }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      margin-bottom: 62px;
+    }
   }
   &-item {
     position: relative;
@@ -66,11 +82,19 @@
         margin-right: 20px;
         margin-bottom: 0;
       }
+      @media screen and (min-width: 1280px) {
+        margin-right: 24px;
+      }
     }
     @media screen and (min-width: 768px) {
       padding-left: 11px;
       padding-right: 11px;
       padding-top: 152px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-left: 44px;
+      padding-right: 44px;
+      padding-top: 163px;
     }
   }
   &-icecream {
@@ -98,6 +122,9 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+  }
   &__icon{
     fill: var(--dark-btn-hover-bg-color);
   }
@@ -107,6 +134,9 @@
   display: block;
   width: 100%;
   margin-bottom: 30px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+  }
 }
 
 .image-absolute {
@@ -114,6 +144,9 @@
   bottom: 350px;
   @media screen and (min-width: 768px) {
     bottom: 361px;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 400px;
   }
 }
 
