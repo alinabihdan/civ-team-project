@@ -2,287 +2,217 @@
   position: relative;
   overflow: hidden;
   background-color: var(--hero-background);
-  background-image: url('../images/mobile/hero-icecream-mobile.png'),
-    url('../images/mobile/ellipse.png');
-  background-size: 171px, 346px;
-  background-repeat: no-repeat;
-  background-position: top 92px left 117px, top 83px left 36px;
   min-height: 502px;
 
-  //   &::before {
-  //     position: absolute;
-  //     display: block;
-  //     content: '';
-  //     top: 83px;
-  //     right: -62px;
-  //     width: 346px;
-  //     height: 344px;
-
-  //     background-color: var(--label-title-color);
-  //     border-radius: 50%;
-  //   }
-  //   &::after {
-  //     position: absolute;
-  //     display: block;
-  //     content: '';
-  //     top: 92px;
-  //     right: 32px;
-  //     width: 171px;
-  //     height: 410px;
-  //     background-image: url(../images/mobile/hero-icecream-mobile.png);
-  //     background-position: center;
-  //     background-repeat: no-repeat;
-  //     background-size: cover;
-  //   }
-
   &-title {
-    position: relative;
-    z-index: 2;
     max-width: 218px;
-    padding-top: 137px;
-    margin-bottom: 19px;
     display: block;
+    margin-top: 137px;
+    margin-bottom: 19px;
     font-family: var(--logo-title-font);
     font-weight: 400;
-    font-size: 26px;
-    line-height: 1.153;
+    @include font(26px, 30px);
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: #ffffff;
 
     .element {
-      font-size: 48px;
-      line-height: 96.5%;
+      @include font(48px, 46px);
 
       color: #d41443;
     }
   }
-  &-button {
-    position: relative;
-    z-index: 2;
+
+  & .button-list {
+    display: flex;
+    & .item + .item {
+      margin-left: 8px;
+    }
+  }
+
+  & .number-list,
+  & .more-button,
+  & .description {
+    display: none;
+  }
+
+  @media screen and (max-width: 1279px) {
+    background-image: url('../images/tablet/hero-icecream-tablet.png'),
+      url('../images/tablet/hero-girl-tablet.png'),
+      url('../images/tablet/hero-milk-tablet.png'),
+      url('../images/mobile/ellipse.png');
+    background-size: 143px, 168px, 124px, 324px;
+    background-repeat: no-repeat;
+    background-position: top 63px right 247px, bottom right 34px,
+      bottom 28px left 34px, top 31px right 137px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/tablet/hero-icecream-tablet@2x.png'),
+        url('../images/tablet/hero-girl-tablet@2x.png'),
+        url('../images/tablet/hero-milk-tablet@2x.png'),
+        url('../images/mobile/ellipse.png');
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/mobile/hero-icecream-mobile.png'),
+      url('../images/mobile/ellipse.png');
+    background-size: 171px, 346px;
+    background-repeat: no-repeat;
+    background-position: top 92px right 32px, top 83px right -62px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/hero-icecream-mobile@2x.png'),
+        url('../images/mobile/ellipse.png');
+    }
   }
 
   @include screen('tablet') {
     min-height: 400px;
 
-    // &::before {
-    //   top: 31px;
-    //   right: 137px;
-    //   width: 324px;
-    //   height: 322px;
-    // }
-    // &::after {
-    //   top: 63px;
-    //   right: 247px;
-    //   width: 143px;
-    //   height: 336px;
-    //   background-image: url(../images/mobile/hero-icecream-mobile.png),
-    //     url(../images/tablet/hero-girl-tablet.png);
-    //   background-size: 143px 336px, 168px 163px;
-    //   background-position: center;
-    //   background-repeat: no-repeat;
-    //   background-size: cover;
-    // }
+    &-title {
+      margin-top: 102px;
+    }
+
+    & .number-list {
+      position: absolute;
+      top: 94px;
+      right: 34px;
+      display: block;
+      @include font(8px, 10px);
+      text-align: right;
+
+      color: var(--section-alt-background);
+
+      & .item + .item {
+        margin-top: 14px;
+      }
+    }
+
+    & .number {
+      position: relative;
+      z-index: 0;
+      font-family: var(--logo-title-font);
+      font-style: normal;
+      font-weight: normal;
+      @include font(28px, 32px);
+      letter-spacing: 0.04em;
+      color: var(--accent-color);
+
+      &::after {
+        position: absolute;
+        z-index: -1;
+        top: -2px;
+        right: -6px;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+
+        background: var(--section-alt-background);
+      }
+    }
+
+    & .description {
+      position: absolute;
+      left: 154px;
+      bottom: 59px;
+      display: block;
+      max-width: 114px;
+      @include font(8px, 12px);
+      color: var(--section-alt-background);
+    }
+    .more-button {
+      position: absolute;
+      left: 154px;
+      bottom: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 18px;
+      height: 18px;
+      background-color: var(--section-alt-background);
+      border-radius: 50px;
+
+      &:hover,
+      &:focus {
+        background-color: var(--light-btn-hover-bg-color);
+      }
+
+      &-icon {
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+
+  @include screen('desktop') {
+    min-height: 665px;
+
+    background-image: url('../images/desktop/hero-icecream-desktop.png'),
+      url('../images/desktop/hero-girl-desktop.png'),
+      url('../images/desktop/hero-milk-desktop.png'),
+      url('../images/mobile/ellipse.png');
+    background-size: 236px, 293px, 188px, 538px;
+    background-repeat: no-repeat;
+    background-position: top 108px right 450px, bottom right 109px,
+      bottom 45px left 77px, top 52px right 267px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/hero-icecream-desktop@2x.png'),
+        url('../images/desktop/hero-girl-desktop@2x.png'),
+        url('../images/desktop/hero-milk-desktop@2x.png'),
+        url('../images/mobile/ellipse.png');
+    }
+
+    &-title {
+      margin-top: 171px;
+    }
+
+    & .number-list {
+      top: 156px;
+      right: 98px;
+      @include font(14px, 18px);
+
+      & .item + .item {
+        margin-top: 35px;
+      }
+    }
+
+    & .number {
+      @include font(56px, 53px);
+
+      &::after {
+        top: -4px;
+        right: -12px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    & .description {
+      left: 295px;
+      bottom: 102px;
+      max-width: 200px;
+      @include font(14px, 20px);
+    }
+    .more-button {
+      left: 295px;
+      bottom: 56px;
+      width: 26px;
+      height: 26px;
+
+      &-icon {
+        width: 9px;
+        height: 9px;
+      }
+    }
   }
 }
-//   background-image: url("../images/mobile/hero-icecream-mobile.png"),
-//     url("../images/tablet/hero-girl-tablet.png"),
-//     url("../images/tablet/hero-milk-tablet.png"),
-//     url("../images/mobile/elipse.png")
-//   background-size: 80px, 100px, 150px;
-//   background-repeat: no-repeat;
-//   background-position: top 120px right 130px, top 270px left 130px, center;
-
-// .hero-header {
-//   overflow: hidden;
-//   width: 100%;
-//   height: 502px;
-
-//   position: relative;
-//   background-color: var(--hero-background);
-// }
-
-// .header {
-//   position: absolute;
-
-//   width: 100%;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-
-//   .logo {
-//     display: block;
-//     width: 199px;
-//     height: 50px;
-
-//     background-image: url(../images/mobile/logo-mobile.png);
-//     background-color: transparent;
-//   }
-
-//   .burger-btn {
-//     @include screen('desktop') {
-//       display: none;
-//     }
-//     @include screen('tablet') {
-//       margin-left: auto;
-//       margin-right: 30px;
-//     }
-
-//     padding: 0;
-//     background-color: transparent;
-//     border: none;
-//     cursor: pointer;
-//     height: 12px;
-//   }
-
-//   .logo-icon {
-//     display: block;
-//     fill: var(--accent-color);
-//   }
-// }
-
-// .mobile-menu {
-//   @include screen('tablet') {
-//     width: 33vw;
-//   }
-
-//   z-index: 10;
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   width: 78vw;
-//   height: 100vh;
-//   padding: 60px 20px;
-//   transform: translateX(100%);
-//   background-color: #e17992;
-//   transition: transform 250ms linear;
-
-//   &.is-open {
-//     transform: translateX(0);
-//   }
-// }
-
-// .mobile-menu-close-icon {
-//   display: block;
-//   fill: #fff;
-// }
-
-// .mobile-menu-close {
-//   position: absolute;
-//   top: 23px;
-//   right: 28px;
-//   padding: 0;
-//   background-color: transparent;
-//   border: none;
-//   cursor: pointer;
-// }
-
-// .mobile-buy-btn {
-//   display: inline-flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 0 43px;
-//   width: 186px;
-//   height: 44px;
-// }
-
-// .mobile-navigation {
-//   margin-top: 32px;
-// }
-
-// .mobile-nav-item:not(:first-child) {
-//   margin-top: 22px;
-// }
-
-// .mobile-nav-link {
-//   color: #ffffff;
-// }
-
-// .navigation {
-//   @media screen and (max-width: 1279px) {
-//     display: none;
-//   }
-// }
-
-// .nav-list {
-//   display: flex;
-// }
-
-// .buy-btn {
-//   display: inline-flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 0 37px;
-//   width: 160px;
-//   height: 44px;
-
-//   display: none;
-//   @include screen('desktop') {
-//     display: inline-flex;
-//   }
-//   @include screen('tablet') {
-//     display: inline-flex;
-//   }
-// }
-
-// .elipse {
-//   position: absolute;
-//   top: 77px;
-//   left: 16px;
-//   width: 346px;
-//   height: 344px;
-
-//   background-color: var(--label-title-color);
-//   border-radius: 50%;
-
-//   @include screen('tablet') {
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//   }
-
-//   .hero-wraper {
-//     position: absolute;
-//     margin-left: auto;
-//   }
-// }
-
-// .elipse::after {
-//   content: '';
-
-//   display: block;
-//   width: 100%;
-//   height: 410px;
-//   background-image: url(../images/mobile/hero-icecream-mobile.png);
-//   background-position: 81px 9px;
-//   background-repeat: no-repeat;
-//   background-size: contain;
-// }
-
-// .hero-header-title {
-//   margin: 0;
-//   margin-top: 137px;
-//   display: inline-block;
-//   font-family: Titan One;
-//   font-weight: 400;
-//   font-size: 26px;
-//   line-height: 1.153;
-//   letter-spacing: 0.04em;
-//   text-transform: uppercase;
-
-//   color: #ffffff;
-
-//   .element {
-//     font-size: 48px;
-//     line-height: 96.5%;
-
-//     color: #d41443;
-//   }
-// }
-
-// .recipe-btn-list {
-//   margin: 0;
-//   display: flex;
-//   margin-top: 19px;
-// };;;;;;;;;;;;;;

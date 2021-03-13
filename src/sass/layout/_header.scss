@@ -1,7 +1,10 @@
 .header {
-  background-color: var(--hero-background);
-  // position: absolute;
-  // padding-top: 6px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding-top: 6px;
 
   width: 100%;
   display: flex;
@@ -61,6 +64,11 @@
       &.current {
         color: var(--accent-color);
       }
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
     }
     @media screen and (max-width: 1279px) {
       display: none;
@@ -76,6 +84,11 @@
   height: 44px;
 
   display: none;
+
+  &:hover,
+  &:focus {
+    background-color: var(--light-btn-hover-bg-color);
+  }
 
   @include screen('tablet') {
     display: flex;
