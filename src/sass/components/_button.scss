@@ -29,7 +29,7 @@
 
   @include screen('tablet') {
     display: inline-block;
-    min-width: 186px;
+    min-width: 160px;
     min-height: 44px;
   }
 
@@ -71,7 +71,7 @@
   background-color: var(--section-alt-background);
 
   min-height: 24px;
-  min-width: 63px;
+  min-width: 83px;
 
   border-radius: 20px;
 
@@ -85,7 +85,7 @@
   }
 
   @include screen('desktop') {
-    min-width: 104px;
+    min-width: 138px;
     min-height: 40px;
     @include font(14px, 18px);
   }
@@ -95,21 +95,125 @@
 .anchor-btn.second {
   color: var(--section-alt-background);
   background-color: var(--accent-color);
-  min-width: 83px;
+  min-width: 63px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--dark-btn-hover-bg-color);
+  }
 
   .hero-header & {
     margin-left: 8px;
   }
 
   @include screen('desktop') {
-    min-width: 138px;
+    min-width: 104px;
     .hero-header & {
-      margin-left: 11px;
+      margin-right: 11px;
     }
   }
+}
+.contacts-btn-red {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 161px;
+  height: 44px;
+  padding-left: 17.84px;
+  padding-right: 17.84px;
+  margin: 0 auto;
+  background-color: var(--bgc-contacts-btn);
+  border-color: transparent;
+  border-radius: 22px;
+  outline: none;
+  margin-bottom: 10px;
 
-  &:hover,
-  &:focus {
-    background-color: var(--dark-btn-hover-bg-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--text-contacts-btn-red);
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    background-color: var(--accent-contacts-btn-red);
+  }
+  &::after {
+    position: absolute;
+    right: 17.84px;
+    bottom: 14px;
+    width: 8px;
+    height: 10px;
+    content: '';
+    background-image: url('../images/btn-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.contacts-btn-white {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 161px;
+  height: 44px;
+  padding-left: 32px;
+  padding-right: 17.84px;
+  margin: 0 auto;
+  background-color: var(--bgc-contacts-btn-white);
+  border-color: transparent;
+  border-radius: 22px;
+  outline: none;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--accent-color);
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    background-color: var(--accent-contacts-btn-white);
+  }
+  &::after {
+    position: absolute;
+    right: 31.33px;
+    bottom: 14px;
+    width: 8px;
+    height: 10px;
+    content: '';
+    background-image: url('../images/btn-arrow-red.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@include screen('tablet') {
+  .contacts-btn-red {
+    width: 191.45px;
+    padding-left: 30px;
+    margin-bottom: 0px;
+    &::after {
+      right: 34px;
+    }
+  }
+  .contacts-btn-white {
+    width: 174.05px;
+    padding-left: 37.71px;
+    &::after {
+      right: 38.63px;
+    }
+  }
+}
+@include screen('desktop') {
+  .contacts-btn-red {
+    width: 198px;
+    padding-left: 35px;
+    &::after {
+      right: 35.96px;
+    }
+  }
+  .contacts-btn-white {
+    width: 180px;
+    padding-left: 39px;
+    &::after {
+      right: 39.96px;
+    }
   }
 }

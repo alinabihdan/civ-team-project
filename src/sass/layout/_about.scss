@@ -1,12 +1,13 @@
 .about {
+    position: relative;
     background-color: var(--section-background);
     padding-top: 125px;
-
-    @media screen and (max-width: 767px) {
+    
+    @media screen and (max-width: 500px) {
         background-image: url('../images/mobile/milk-spalsh-mobile.png');
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: bottom 40px center; 
+        background-position: bottom 3% center; 
         
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -15,13 +16,22 @@
         }
     }
 
-
     @include screen('tablet') {
         padding-top: 130px;
     }
 
     @include screen('desktop') {
         padding-top: 125px;
+        background-image: url('../images/desktop/milk-splash-desktop.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom -50% center;
+
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx){
+            background-image: url('../images/desktop/milk-splash-desktop@2x.png');
+        }
     }
 
     &-wrap {
@@ -29,6 +39,29 @@
             display: flex;
         }
     }
+
+    // &::after {
+    //     content: '';
+
+    //     @include screen ('desktop') {
+    //         display: block;
+    //         position: absolute;
+    //         left: 0%;
+    //         bottom: -20%;
+    //         height: 534px;
+    //         width: 100%;
+    //         background-image: url('../images/desktop/milk-splash-desktop.png');
+    //         background-repeat: no-repeat;
+    //         background-size: cover;
+    //         // background-position: bottom center;
+    
+    //         @media screen and (min-device-pixel-ratio: 2),
+    //             screen and (min-resolution: 192dpi),
+    //             screen and (min-resolution: 2dppx){
+    //             background-image: url('../images/desktop/milk-splash-desktop@2x.png');
+    //         }
+    //     }
+    // }
 }
 
 .about-img {
@@ -58,14 +91,26 @@
 }
 
 .text-wrap {
-}
-
-.paragraph-1,  .paragraph-2,  .paragraph-3 {
-    @media  screen and (max-width: 767px) {
+    @media  screen and (max-width: 499px) {
         padding-right: 30px;
         padding-left: 30px;
     }
-} 
+
+    @media  screen and (min-width: 500px) and (max-width: 767px) {
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @include screen('tablet') {
+        width: 340px;
+        padding-top: 47px;
+    }
+
+    @include screen('desktop') {
+        width: 463px;
+    }
+}
 
 .paragraph-1 {
     @include font(12px, 19px);
