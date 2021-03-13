@@ -44,7 +44,10 @@
 <path d="M15.057 7.609l7.057 7.057h-15.448c-0.736 0-1.333 0.597-1.333 1.333s0.597 1.333 1.333 1.333v0h15.448l-7.057 7.057c-0.241 0.241-0.39 0.575-0.39 0.943 0 0.736 0.597 1.333 1.333 1.333 0.368 0 0.701-0.149 0.943-0.39l9.333-9.333c0.239-0.242 0.387-0.575 0.387-0.943s-0.148-0.701-0.387-0.943l-9.333-9.333c-0.241-0.241-0.575-0.39-0.943-0.39-0.736 0-1.333 0.597-1.333 1.333 0 0.368 0.149 0.701 0.39 0.943v0z"></path>
 </symbol>
 <symbol id="icon-arrow" viewBox="0 0 19 32">
-<path fill="none" stroke="#d41443" style="stroke: var(--color6, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
+<path fill="none" stroke="#d41443" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
+</symbol>
+<symbol id="icon-arrow-white" viewBox="0 0 26 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
 </symbol>
 </defs>
 </svg>
