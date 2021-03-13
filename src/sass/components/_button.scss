@@ -39,11 +39,23 @@
 
   & .icon-arrow {
     margin-left: 13px;
+    fill: currentColor;
   }
 
   &:hover,
   &:focus {
     background-color: var(--light-btn-hover-bg-color);
+  }
+}
+
+// красная модальная кнопка
+.modal-btn.second {
+  color: var(--section-alt-background);
+  background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--dark-btn-hover-bg-color);
   }
 }
 
@@ -55,8 +67,9 @@
 .anchor-btn {
   display: inline-block;
 
-  color: var(--section-alt-background);
-  background-color: var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--section-alt-background);
+
   min-height: 24px;
   min-width: 63px;
 
@@ -68,7 +81,7 @@
   &:hover,
   &:focus {
     cursor: pointer;
-    background-color: var(--dark-btn-hover-bg-color);
+    background-color: var(--light-btn-hover-bg-color);
   }
 
   @include screen('desktop') {
@@ -78,9 +91,11 @@
   }
 }
 
+// красная якорная кнопка
 .anchor-btn.second {
-  color: var(--accent-color);
-  background-color: var(--section-alt-background);
+  color: var(--section-alt-background);
+  background-color: var(--accent-color);
+
   min-width: 83px;
 
   @include screen('desktop') {
@@ -89,6 +104,6 @@
 
   &:hover,
   &:focus {
-    background-color: var(--light-btn-hover-bg-color);
+    background-color: var(--dark-btn-hover-bg-color);
   }
 }
