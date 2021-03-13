@@ -34,6 +34,7 @@
   }
 
   @include screen('desktop') {
+    min-width: 159px;
   }
 
   & .icon-arrow {
