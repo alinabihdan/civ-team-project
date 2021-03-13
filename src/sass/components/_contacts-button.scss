@@ -7,7 +7,7 @@
   padding-left: 17.84px;
   padding-right: 17.84px;
   margin: 0 auto;
-  background-color: #d41342;
+  background-color: var(--bgc-contacts-btn);
   border-color: transparent;
   border-radius: 22px;
   outline: none;
@@ -16,11 +16,11 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
-  color: #ffffff;
+  color: var(--text-contacts-btn-red);
   cursor: pointer;
   &:focus,
   &:hover {
-    background-color: #c7133e;
+    background-color: var(--accent-contacts-btn-red);
   }
   &::after {
     position: absolute;
@@ -43,7 +43,7 @@
   padding-left: 32px;
   padding-right: 17.84px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: var(--bgc-contacts-btn-white);
   border-color: transparent;
   border-radius: 22px;
   outline: none;
@@ -51,11 +51,11 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
-  color: #d41443;
+  color: var(--accent-color);
   cursor: pointer;
   &:focus,
   &:hover {
-    background-color: #ecebeb;
+    background-color: var(--accent-contacts-btn-white);
   }
   &::after {
     position: absolute;
