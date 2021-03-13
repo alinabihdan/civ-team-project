@@ -39,6 +39,11 @@
   & .icon-arrow {
     margin-left: 13px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: var(--light-btn-hover-bg-color);
+  }
 }
 
 //нужно уточнить у Оксаны зачем этот класс
@@ -62,6 +67,7 @@
   &:hover,
   &:focus {
     cursor: pointer;
+    background-color: var(--dark-btn-hover-bg-color);
   }
 
   @include screen('desktop') {
@@ -78,5 +84,10 @@
 
   @include screen('desktop') {
     min-width: 138px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--light-btn-hover-bg-color);
   }
 }
