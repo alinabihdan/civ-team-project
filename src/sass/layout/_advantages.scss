@@ -1,0 +1,63 @@
+.advantages {
+  padding-top: 39px;
+  padding-bottom: 97px;
+
+  @include screen('tablet') {
+    padding-top: 66px;
+    padding-bottom: 140px;
+  }
+  @include screen('desktop') {
+    padding-top: 39px;
+    padding-bottom: 139px;
+  }
+}
+
+// Проверить учитывая общие стили
+// .advantages .container {
+//   padding-top: 0;
+//   text-align: left;
+//   padding-right: 70px;
+
+//   @include screen('tablet') {
+//     padding-right: 76px;
+//     margin: 0;
+//   }
+// }
+
+.advantages-item:not(:last-child) {
+  margin-bottom: 38px;
+  @include screen('tablet') {
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+}
+.advantages-number {
+  display: block;
+  font-family: var(--logo-title-font);
+  @include font(36px, 41px);
+  color: var(--accent-color);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  @include screen('tablet') {
+    @include font(48px, 55px);
+  }
+  @include screen('desktop') {
+    @include font(58px, 66px);
+  }
+}
+.advantages-text {
+  font-weight: 700;
+  @include font(12px, 20px);
+
+  @include screen('tablet') {
+    @include font(14px, 24px);
+  }
+}
+
+.advantages-list {
+  @include screen('tablet') {
+    display: flex;
+  }
+}
