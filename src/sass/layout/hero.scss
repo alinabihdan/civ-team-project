@@ -76,7 +76,13 @@
     min-height: 400px;
 
     &-title {
+      max-width: 162px;
       margin-top: 102px;
+      @include font(22px, 25px);
+
+      .element {
+        @include font(34px, 31px);
+      }
     }
 
     & .number-list {
@@ -173,7 +179,13 @@
     }
 
     &-title {
+      max-width: 277px;
       margin-top: 171px;
+      @include font(38px, 44px);
+
+      .element {
+        @include font(58px, 52px);
+      }
     }
 
     & .number-list {
