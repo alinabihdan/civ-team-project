@@ -18,6 +18,15 @@
   line-height: 1.86;
   font-weight: 700;
 
+  @include screen('tablet') {
+    font-size: 14px;
+  }
+
+  @include screen('desktop') {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+
   & .link {
     display: inline-block;
     color: var(--accent-color);
