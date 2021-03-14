@@ -2,9 +2,6 @@
   display: inline-block;
   padding: 0;
 
-  color: var(--accent-color);
-  background-color: var(--bgc-contacts-btn-white);
-
   font-family: inherit;
   font-weight: 700;
   @include font(16px, 21px);
@@ -19,6 +16,11 @@
 
 .modal-btn {
   min-height: 44px;
+
+  color: var(--accent-color);
+  background-color: var(--bgc-contacts-btn-white);
+
+  @include transition-1-selector(background-color);
 
   & .icon-arrow {
     margin-left: 13px;
@@ -104,6 +106,8 @@
 
   font-weight: 400;
   @include font(8px, 10px);
+
+  @include transition-1-selector(background-color);
 
   &:hover,
   &:focus {
