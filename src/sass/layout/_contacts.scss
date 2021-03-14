@@ -137,7 +137,15 @@
     color: var(--contacts-text);
     cursor: pointer;
   }
+
+  &-btn-items {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
 }
+
 @media screen and (max-width: 479px) {
   .contacts {
     &-items {
