@@ -43,31 +43,13 @@
   }
 
   .footer & {
-    padding-bottom: 43px;
-
-    @include screen('tablet') {
-      display: flex;
-      justify-content: space-between;
-
-      padding-bottom: 91px;
-    }
-
-    @include screen('desktop') {
-      padding-bottom: 97px;
-    }
-  }
-
-  .footer-copyright & {
-    padding-top: 22px;
     padding-bottom: 25px;
 
     @include screen('tablet') {
-      padding-top: 29px;
       padding-bottom: 18px;
     }
 
     @include screen('desktop') {
-      padding-top: 9px;
       padding-bottom: 10px;
     }
   }
