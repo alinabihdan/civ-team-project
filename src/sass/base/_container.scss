@@ -4,7 +4,6 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  outline: $temp-outline;
 
   @include screen('mobile') {
     width: 480px;
