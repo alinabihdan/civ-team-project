@@ -3,7 +3,7 @@
   padding: 0;
 
   color: var(--accent-color);
-  background-color: var(--section-alt-background);
+  background-color: var(--bgc-contacts-btn-white);
 
   font-family: inherit;
   font-weight: 700;
@@ -27,7 +27,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--light-btn-hover-bg-color);
+    background-color: var(--accent-contacts-btn-white);
   }
 
   .header & {
@@ -73,11 +73,11 @@
 // красная модальная кнопка
 .modal-btn.second {
   color: var(--section-alt-background);
-  background-color: var(--accent-color);
+  background-color: var(--bgc-contacts-btn);
 
   &:hover,
   &:focus {
-    background-color: var(--dark-btn-hover-bg-color);
+    background-color: var(--accent-contacts-btn-red);
   }
 
   .contacts & {
@@ -95,7 +95,7 @@
   display: inline-block;
 
   color: var(--accent-color);
-  background-color: var(--section-alt-background);
+  background-color: var(--bgc-contacts-btn-white);
 
   min-height: 24px;
   min-width: 83px;
@@ -108,7 +108,7 @@
   &:hover,
   &:focus {
     cursor: pointer;
-    background-color: var(--light-btn-hover-bg-color);
+    background-color: var(--accent-contacts-btn-white);
   }
 
   @include screen('desktop') {
@@ -121,12 +121,12 @@
 // красная якорная кнопка
 .anchor-btn.second {
   color: var(--section-alt-background);
-  background-color: var(--accent-color);
+  background-color: var(--bgc-contacts-btn);
   min-width: 63px;
 
   &:hover,
   &:focus {
-    background-color: var(--dark-btn-hover-bg-color);
+    background-color: var(--accent-contacts-btn-red);
   }
 
   @include screen('desktop') {
