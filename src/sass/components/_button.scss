@@ -19,29 +19,34 @@
 
 .modal-btn {
   // display: none;
-
-  .mobile-menu &{
-    display: block;
-  }
-
-  @include screen('tablet') {
-    display: inline-block;
-    min-width: 160px;
-    min-height: 44px;
-  }
-
-  @include screen('desktop') {
-    min-width: 159px;
-  }
-
+   
   & .icon-arrow {
     margin-left: 13px;
     fill: currentColor;
   }
-
+  
   &:hover,
   &:focus {
     background-color: var(--light-btn-hover-bg-color);
+  }
+  
+  .header & {
+    display: none;
+
+    @include screen('tablet') {
+    display: inline-block;
+    min-width: 160px;
+    min-height: 44px;
+    }
+
+    @include screen('desktop') {
+    min-width: 159px;
+    margin-right: 115px;
+    }
+  }
+
+  .mobile-menu & {
+    display: block;
   }
 }
 
