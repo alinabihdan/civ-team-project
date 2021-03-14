@@ -19,29 +19,38 @@
 
 .modal-btn {
   // display: none;
-   
+  min-height: 44px;
+
   & .icon-arrow {
     margin-left: 13px;
     fill: currentColor;
   }
-  
+
   &:hover,
   &:focus {
     background-color: var(--light-btn-hover-bg-color);
   }
-  
+
   .header & {
     display: none;
 
     @include screen('tablet') {
-    display: inline-block;
-    min-width: 160px;
-    min-height: 44px;
+      display: inline-block;
+      min-width: 160px;
     }
 
     @include screen('desktop') {
-    min-width: 159px;
-    margin-right: 115px;
+      min-width: 159px;
+      margin-right: 115px;
+    }
+  }
+
+  .about & {
+    min-width: 176px;
+    @include font(14px, 18px);
+
+    @include screen('tablet') {
+      @include font(16px, 21px);
     }
   }
 
@@ -99,15 +108,8 @@
     background-color: var(--dark-btn-hover-bg-color);
   }
 
-  .hero-header & {
-    margin-left: 8px;
-  }
-
   @include screen('desktop') {
     min-width: 104px;
-    .hero-header & {
-      margin-right: 11px;
-    }
   }
 }
 .contacts-btn-red {
