@@ -28,6 +28,10 @@
     display: flex;
     & .item + .item {
       margin-left: 8px;
+
+      @include screen('desktop') {
+        margin-left: 15px;
+      }
     }
   }
 
