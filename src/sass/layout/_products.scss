@@ -50,6 +50,15 @@
     text-transform: uppercase;
     color: var(--section-alt-background);
     margin-bottom: 30px;
+    &::after {
+      content: "...";
+      font-size: 28px;
+      color: var(--section-alt-background);
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+      letter-spacing: 0.12em;
+    }
 
     @media screen and (min-width: 1280px) {
       margin-bottom: 32px;
