@@ -17,6 +17,7 @@
 
   @include screen('desktop') {
     @include font(58px, 66px);
+    letter-spacing: 0.06em;
   }
 
   .products & {
