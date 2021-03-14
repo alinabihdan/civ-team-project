@@ -14,8 +14,6 @@
   background-color: #e17992;
   transition: transform 250ms linear;
 
-
-
   &.is-open {
     transform: translateX(0);
   }
@@ -36,15 +34,6 @@
   cursor: pointer;
 }
 
-.mobile-buy-btn {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 43px 0 63px;
-  min-width: 209px;
-  height: 44px;
-}
-
 .mobile-navigation {
   margin-top: 32px;
 }
@@ -55,7 +44,7 @@
 
 .mobile-nav-link {
   color: #ffffff;
-  
+
   &.current {
     color: var(--accent-color);
   }
