@@ -1,15 +1,15 @@
 // Падинги-топ пересмотреть учитывая все стили, вверху вылазит 6 рх и сверить с верхней секцией
 .advantages {
-  padding-top: 39px;
+  padding-top: 20px;
   padding-bottom: 97px;
   background-color: var(--section-background);
 
   @include screen('tablet') {
-    padding-top: 66px;
+    padding-top: 33px;
     padding-bottom: 140px;
   }
   @include screen('desktop') {
-    padding-top: 39px;
+    padding-top: 20px;
     padding-bottom: 139px;
   }
 }
