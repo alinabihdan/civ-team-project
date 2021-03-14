@@ -179,11 +179,21 @@
     background-color: var(--accent-contacts-btn-white);
   }
 
-  @media screen and (min-width: 1280px) {
-    // margin-bottom: 50px;
-  }
-
   &__icon {
     fill: var(--accent-contacts-btn-red);
+  }
+
+  .hero & {
+    display: none;
+
+    @include screen('tablet') {
+      position: absolute;
+      left: 154px;
+      bottom: 34px;
+
+      display: flex;
+      width: 18px;
+      height: 18px;
+    }
   }
 }
