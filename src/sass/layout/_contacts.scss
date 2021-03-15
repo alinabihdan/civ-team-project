@@ -3,6 +3,12 @@
   background-color: var(--section-background);
   margin: 0 auto;
 
+  &-link-map {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: currentColor
+  }
+
   &-padding {
     padding-left: 50px;
     padding-right: 50px;
@@ -316,3 +322,4 @@
     }
   }
 }
+
