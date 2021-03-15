@@ -58,11 +58,18 @@
         }
 
         @media screen and (min-width: 1400px) {
-            background-position-y: 27%;
+            bottom: -19%;
+            height: 600px;
         }
 
         @media screen and (min-width: 1700px) {
-            background-position-y: 35%;
+            height: 700px;
+            bottom: -30%;
+        }
+
+        @media screen and (min-width: 1900px) {
+            height: 800px;
+            bottom: -40%;
         }
     }
 }
