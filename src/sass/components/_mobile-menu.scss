@@ -37,7 +37,14 @@
 }
 
 .mobile-nav {
-  margin-top: 19px;
+  margin-top: 32px;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 14px 24px;
+  border: 1px solid #E18298;
+  color: #ffffff;
 
   &-item {
   border: 1px solid var(--border-color-mobile-nav-link);
