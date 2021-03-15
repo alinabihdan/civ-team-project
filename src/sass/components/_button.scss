@@ -50,6 +50,11 @@
   }
 
   .about & {
+    @media screen and (max-width: 767px) {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+    }
     min-width: 176px;
     @include font(14px, 18px);
 
