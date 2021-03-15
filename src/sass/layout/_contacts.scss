@@ -2,11 +2,13 @@
   width: 100%;
   background-color: var(--section-background);
   margin: 0 auto;
+
   &-link-map {
     padding-top: 14px;
     padding-bottom: 14px;
     color: currentColor
   }
+
   &-padding {
     padding-left: 50px;
     padding-right: 50px;
@@ -146,6 +148,11 @@
   &-btn-items {
     @media screen and (max-width: 767px) {
       text-align: center;
+    }
+  }
+
+  &-btn-items:not(:last-child) {
+    @media screen {
       margin-bottom: 10px;
     }
   }
@@ -256,19 +263,19 @@
       transform: translateY(-102px);
     }
     &-bg-img {
-    background-image: url("../images/desktop/contacts-bg@1x.png");
-    background-repeat: no-repeat;
-    background-size: 1280px 382px;
-    background-position: top 102px left;
-    
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      &__bg-img {
-        background-image: url("../images/desktop/contacts-bg@2x.png");
+      background-image: url('../images/desktop/contacts-bg@1x.png');
+      background-repeat: no-repeat;
+      background-size: 1280px 382px;
+      background-position: top 102px left;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        &__bg-img {
+          background-image: url('../images/desktop/contacts-bg@2x.png');
+        }
       }
     }
-  }
     &-list {
       margin-bottom: 86px;
     }
