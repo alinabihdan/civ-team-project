@@ -9,6 +9,7 @@
 
 // COMPONENTS
 @import './components/mobile-menu';
+@import './components/magnific-popup';
 @import './components/button';
 @import './components/section-title';
 @import './components/social-links';
@@ -19,10 +20,9 @@
 @import './layout/hero';
 @import './layout/products';
 @import './layout/about';
-
+@import './layout/advantages';
 @import './layout/gallery';
-
+@import './layout/customer-reviews';
 @import './layout/contacts';
 @import './layout/footer';
-
-
+@import './layout/about-modal';
