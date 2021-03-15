@@ -9,7 +9,9 @@
   right: 0;
   width: 78vw;
   height: 100vh;
-  padding: 60px 20px;
+  // padding: 60px 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   transform: translateX(100%);
   background-color: #e17992;
   transition: transform 250ms linear;
@@ -34,16 +36,23 @@
   cursor: pointer;
 }
 
-.mobile-navigation {
-  margin-top: 32px;
+.mobile-nav {
+  margin-top: 19px;
+
+  &-item {
+  border: 1px solid #E18298;
 }
 
-.mobile-nav-item:not(:first-child) {
-  margin-top: 22px;
-}
 
-.mobile-nav-link {
+  &-link {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: block;
+  font-weight: 700;
   color: #ffffff;
+  
 
   &.current {
     color: var(--accent-color);
@@ -54,3 +63,6 @@
     color: var(--accent-color);
   }
 }
+}
+
+
