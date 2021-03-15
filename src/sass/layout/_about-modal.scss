@@ -1,8 +1,172 @@
 .about-backdrop {
     position: fixed;
-    left: 0%;
-    top: 0%;
+    transform: translateX(100vw);
+    top: 0;
     width: 100vw;
     height: 100vh;
-    color: rgba(225, 121, 145, 0.589);
+    z-index: 200;
+    background-color: rgba(225, 121, 145, 0.849);
+    padding: 40px 10px;
+    overflow-y: scroll;
+
+    @include transition-1-selector (transform);
+
+    @include screen('tablet') {
+        padding: 40px 30px;
+    }
+}
+
+.is-hidden-about {
+    transform: translateX(0);
+}
+
+.about-modal {
+
+    &-close {
+        position: absolute;
+        right: 28px;
+        top: 15px;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        @include transition-1-selector(background-color);
+        
+        &:hover, &:focus{
+        background-color: var(--accent-color);
+        cursor: pointer;
+        }
+    }
+
+    &-img {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+.about-pros {
+    background-color: var(--section-background);
+    border-radius: 20px;
+    padding: 20px;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 460px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @include screen('tablet') {
+
+    }
+
+
+    &-item {
+
+        &:not(:last-child){
+            @media screen and (max-width: 767px) {
+                margin-bottom: 25px;
+            }
+        }
+    
+        @media screen and (max-width: 767px) { 
+            background-image: url('../images/mobile/milk-spalsh-mobile.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom 4% center;
+                
+            @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx){
+                background-image: url('../images/mobile/milk-splash-mobile@2x.png');
+            }   
+        }  
+        
+        @include screen('tablet') {
+            display: flex;
+            align-items: center;
+            padding: 7px;
+            border-radius: 20px;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            &:nth-child(odd) {
+                flex-direction: row-reverse;
+                border: 1px solid rgba(225, 121, 145, 0.849);
+            }
+        }
+
+        @include screen('desktop') {
+            &:nth-child(odd) {
+            }
+        }
+    }   
+}
+
+
+.about-picture-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+
+    @include screen('tablet') {
+        max-width: 340px;
+
+        &:nth-child(odd) {
+            margin-left: 15px;
+        }
+
+        &:nth-child(even) {
+            margin-right: 15px;
+        }
+    }
+}
+
+.about-text-wrap {
+    @include screen('tablet') {
+        width: 690px;
+        
+        &:nth-child(odd) {
+            margin-left: 20px;
+        }
+    }
+
+    @include screen('desktop') {
+        width: 700px;
+    }
+}
+
+.about-paragraph-1 {
+    @include font(12px, 19px);
+    font-weight: 500;
+    color: var(--dark-color);
+    margin-bottom: 33px;
+
+    @include screen('tablet') {
+        @include font(14px, 25px);
+    }
+
+    @include screen('desktop') {
+        @include font(16px, 28px);
+        letter-spacing: 0.04em;
+        margin-bottom: 35px;
+    }
+}
+
+.about-paragraph-2 {
+    @include font(12px, 19px);
+    font-weight: 500;
+    color: var(--about-paragraph-color);
+
+    @include screen('tablet') {
+        @include font(14px, 25px);
+        letter-spacing: 0.04em;
+    }
+
+    @include screen('desktop') {
+        @include font(14px, 27px);
+    }
 }
