@@ -2,6 +2,7 @@
   width: 100%;
   background-color: var(--section-background);
   margin: 0 auto;
+
   &-padding {
     padding-left: 50px;
     padding-right: 50px;
@@ -137,7 +138,20 @@
     color: var(--contacts-text);
     cursor: pointer;
   }
+
+  &-btn-items {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &-btn-items:not(:last-child) {
+    @media screen {
+      margin-bottom: 10px;
+    }
+  }
 }
+
 @media screen and (max-width: 479px) {
   .contacts {
     &-items {
@@ -160,6 +174,10 @@
 }
 @include screen('tablet') {
   .contacts {
+    &-padding {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
     &-translate {
       transform: translateY(-78px);
     }
@@ -231,8 +249,26 @@
 }
 @include screen('desktop') {
   .contacts {
+    &-padding {
+      padding-left: 114px;
+      padding-right: 114px;
+    }
     &-translate {
       transform: translateY(-102px);
+    }
+    &-bg-img {
+      background-image: url('../images/desktop/contacts-bg@1x.png');
+      background-repeat: no-repeat;
+      background-size: 1280px 382px;
+      background-position: top 102px left;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        &__bg-img {
+          background-image: url('../images/desktop/contacts-bg@2x.png');
+        }
+      }
     }
     &-list {
       margin-bottom: 86px;
