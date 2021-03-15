@@ -13,7 +13,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   transform: translateX(100%);
-  background-color: #e17992;
+  background-color: var(--bgr-color-mobile-menu);
   transition: transform 250ms linear;
 
   &.is-open {
@@ -23,7 +23,7 @@
 
 .mobile-menu-close-icon {
   display: block;
-  fill: #fff;
+  fill: var(--section-alt-background);
 }
 
 .mobile-menu-close {
@@ -40,7 +40,7 @@
   margin-top: 19px;
 
   &-item {
-  border: 1px solid #E18298;
+  border: 1px solid var(--border-color-mobile-nav-link);
 }
 
 
@@ -51,7 +51,7 @@
   padding-left: 20px;
   display: block;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--section-alt-background);
   
 
   &.current {
