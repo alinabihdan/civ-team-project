@@ -36,7 +36,6 @@
   }
 
   & .number-list,
-  & .more-button,
   & .description {
     display: none;
   }
@@ -136,28 +135,6 @@
       max-width: 114px;
       @include font(8px, 12px);
       color: var(--section-alt-background);
-    }
-    .more-button {
-      position: absolute;
-      left: 154px;
-      bottom: 34px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 18px;
-      height: 18px;
-      background-color: var(--section-alt-background);
-      border-radius: 50px;
-
-      &:hover,
-      &:focus {
-        background-color: var(--light-btn-hover-bg-color);
-      }
-
-      &-icon {
-        width: 6px;
-        height: 6px;
-      }
     }
   }
 
