@@ -4,7 +4,6 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  // outline: 1px solid teal;
 
   @include screen('mobile') {
     width: 480px;
@@ -26,7 +25,6 @@
   }
 
   .header & {
-    // width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +39,7 @@
 
   .hero & {
     position: relative;
-    z-index: 2;
+    z-index: -1;
     
   }
 
