@@ -1,7 +1,7 @@
 .about-backdrop {
     position: fixed;
-    transform: translateX(100vw);
-    opacity: 0;
+    transform: translateX(0);
+    opacity: 1;
     top: 0;
     width: 100vw;
     height: 100vh;
@@ -18,8 +18,10 @@
 }
 
 .about-backdrop.is-hidden-about {
-    transform: translateX(0);
-    opacity: 1;
+    transform: translateX(100vw);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
 
 .about-modal {
