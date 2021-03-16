@@ -1,12 +1,12 @@
 .hero {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   background-color: var(--hero-background);
 
 
   & .container {
     position: relative;
-    z-index: 10;
+    z-index: 0;
     min-height: 502px;
     padding-top: 193px;
     padding-bottom: 160px;
@@ -66,7 +66,7 @@
     background-size: 236px, 293px, 188px, 538px;
     background-repeat: no-repeat;
     background-position: bottom right 450px, bottom right 109px,
-      bottom 45px left 77px, top 52px left 267px;
+      bottom 45px left 77px, top 52px right 267px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
