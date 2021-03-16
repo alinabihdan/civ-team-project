@@ -124,7 +124,14 @@
 
 // белая якорная кнопка
 .anchor-btn {
-  display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 62.4px;
+    height: 24px;
+    border-radius: 20px;
+    @include transition-1-selector(background-color);
 
   color: var(--accent-color);
   background-color: var(--bgc-contacts-btn-white);
@@ -157,7 +164,7 @@
   color: var(--section-alt-background);
   background-color: var(--bgc-contacts-btn);
   min-width: 63px;
-
+    
   &:hover,
   &:focus {
     background-color: var(--accent-contacts-btn-red);
