@@ -6,6 +6,6 @@ var swiper = new Swiper('.swiper-container', {
       type: 'bullets',
       clickable: true,
     },
-    touchRatio: 5,
+    touchRatio: 2,
     grabCursor: true,
   });
