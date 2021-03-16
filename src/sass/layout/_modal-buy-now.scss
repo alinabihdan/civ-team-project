@@ -36,11 +36,7 @@
   background-color: var(--hero-background);
   border-radius: 20px;
   
-  overflow-y: scroll;
-
-  &-open{
-    overflow: hidden;
-  }
+  // overflow-y: scroll;
 }
 
 .form {
@@ -72,7 +68,7 @@
 }
 
 .form-list{
-    width: 100%;
+    width: 100%; 
     @include font(14px, 16px);
 
     & .item{
@@ -82,7 +78,8 @@
         align-items: center;
     }
 
-    & .description{
+    & .description{  
+      font-family: var(--logo-title-font);
         font-weight: 700;
     }
 }

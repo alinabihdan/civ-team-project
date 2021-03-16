@@ -43,6 +43,10 @@ body {
 
   font-size: 14px;
   line-height: 1.76;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .is-hidden {
