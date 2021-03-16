@@ -4,10 +4,16 @@
   margin: 0 auto;
 
   &-link-map {
-    padding-top: 14px;
-    padding-bottom: 14px;
-    color: currentColor
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: currentColor;
+    &:hover,
+    &:focus {
+    background-color: var(--accent-contacts-btn-red);
+    }
   }
+
 
   &-padding {
     padding-left: 50px;
