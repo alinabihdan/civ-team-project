@@ -35,6 +35,12 @@
 
   background-color: var(--hero-background);
   border-radius: 20px;
+  
+  overflow-y: scroll;
+
+  &-open{
+    overflow: hidden;
+  }
 }
 
 .form {
