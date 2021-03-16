@@ -1,41 +1,41 @@
 <div class="backdrop-franchise is-hidden" data-modal-franchise>
     <div class="modal-franchise">
-        <button type="button" data-modal-franchise-close>
-            <svg class="franchise-close-icon" width="14" height="14">
+        <button class="franchise-close" type="button" data-modal-franchise-close>
+            <svg class="mobile-menu-close-icon" width="14" height="14">
                 <use href="./images/sprite.svg#close-icon"></use>
             </svg>
         </button>
         <h2 class="franchise-title"> REQUEST INFORMATION</h2>
-        <p class="franchise-subtitle">Request more information on starting your own IceCream Made With Passion Franchise</p>
+        <p class="franchise-subtitle">Request more information on starting your own IceCream Franchise</p>
 
         <form action="#" class="franchise-form" autocomplete="off">
             <div>
-                <label class="modal-label" for="name">Name</label>
+                <label class="modal-label" for="name">Name:</label>
                 <input class="modal-input" id="name" name="name" placeholder=" " type="text">
             </div>
             
             <div>
-                <label class="modal-label" for="mail">Email</label>
+                <label class="modal-label" for="mail">Email:</label>
                 <input class="modal-input" type="email" name="email" id="mail">
             </div>
             
             <div>
-                <label class="modal-label" for="tel">Phone</label>
+                <label class="modal-label" for="tel">Phone:</label>
                 <input class="modal-input" type="tel" name="phone" id="tel">
             </div>
             
             <div>
-                <label class="modal-label" for="adress">Adress</label>
+                <label class="modal-label" for="adress">Adress:</label>
                 <input class="modal-input" type="text" name="adress" id="adress">
             </div>
             
             <div>
-                <label class="modal-label" for="city">City</label>
+                <label class="modal-label" for="city">City:</label>
                 <input class="modal-input" type="text" name="city" id="city">
             </div>
             
             <div>
-                <label class="modal-label" for="state">State</label>
+                <label class="modal-label" for="state">State:</label>
                 <select class="modal-select" id="state" name="state">
                     <option value="" selected="selected">-- Select --</option>
                     <option value="Alabama">Alabama</option>
@@ -94,10 +94,10 @@
             
             <div>
                 <label class="modal-label" for="geographic-area">What geographic area interests you?</label>
-                <input class="form-text" type="text" id="geographic-area" name="geographic_area">
+                <input class="modal-input" type="text" id="geographic-area" name="geographic_area">
             </div>
             
-            <fieldset class="radios-wrapper">
+            <!-- <fieldset class="radios-wrapper">
                 <legend class="fieldset-legend">Do you have access to $125k of liquid assets to apply to the purchase of a
                         Kilwins store?</legend>
                 <div class="fieldset-wrapper">
@@ -111,11 +111,11 @@
                         <label for="assets-no" class="option">No</label>
                     </div>
                 </div>
-            </fieldset>
+            </fieldset> -->
 
             <div class=""> 
                 <label class="modal-label" for="time-frame">What is your time frame to open an IceCream Franchise?</label> 
-                <select id="time-frame" name="time_frame" class="form-select">
+                <select id="time-frame" name="time_frame" class="modal-select">
                     <option value="" selected="selected">-- Select --</option>
                     <option value="Less than 3 months">&lt; 3 months</option>
                     <option value="3 - 6 Months">3 - 6 Months</option>
@@ -127,7 +127,7 @@
             <label for="how-hear-about">How did you hear about IceCream?</label>
             <input type="text" id="how-hear-about" name="how_did_you_hear_about" value="" class="modal-input">
 
-            <button class="button franchise-button" type="submit">Request Information</button>
+            <button class="button modal-btn franchise-button" type="submit">Request Information</button>
            
         </form>
     </div>
