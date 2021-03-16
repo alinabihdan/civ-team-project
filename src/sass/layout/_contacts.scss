@@ -4,10 +4,15 @@
   margin: 0 auto;
 
   &-link-map {
-    padding-top: 14px;
-    padding-bottom: 14px;
-    color: currentColor
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    &:hover,
+    &:focus {
+    background-color: var(--accent-contacts-btn-red);
+    }
   }
+
 
   &-padding {
     padding-left: 50px;
@@ -265,9 +270,9 @@
     &-bg-img {
       background-image: url('../images/desktop/contacts-bg@1x.png');
       background-repeat: no-repeat;
-      background-size: 1280px 382px;
-      background-position: top 102px left;
-
+      // background-size: 100vw 382px;
+      background-position: top -10px left;
+      background-size: contain;
       @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
