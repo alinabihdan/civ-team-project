@@ -118,14 +118,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/about-modal.js":[function(require,module,exports) {
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 (function () {
-  var _refs;
-
-  var refs = (_refs = {
-    openModalBtn: document.querySelector('[about-modal-open]')
-  }, _defineProperty(_refs, "openModalBtn", document.querySelector('[hero-modal-open]')), _defineProperty(_refs, "closeModalBtn", document.querySelector('[about-modal-close]')), _defineProperty(_refs, "modal", document.querySelector('[about-modal]')), _refs);
+  var refs = {
+    openModalBtn: document.querySelector('[about-modal-open]'),
+    closeModalBtn: document.querySelector('[about-modal-close]'),
+    modal: document.querySelector('[about-modal]')
+  };
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
@@ -161,7 +159,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57008" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61119" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
