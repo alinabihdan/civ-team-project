@@ -34,17 +34,21 @@
   padding-bottom: 20px;
   background-color: var(--hero-background);
   border-radius: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
 }
 
 .form {
-    @include font(16px, 20px);
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--accent-color);
+  @include font(16px, 20px);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-color);
 
   &-title {
     max-width: 200px;
-    margin: 0   auto;
+    margin: 0 auto;
     margin-bottom: 12px;
     font-family: var(--logo-title-font);
     font-size: 700;
@@ -64,37 +68,37 @@
   }
 }
 
-.form-list{
-    width: 100%; 
-    @include font(14px, 16px);
+.form-list {
+  width: 100%;
+  @include font(14px, 16px);
 
-    & .item{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    & .description{  
-      font-family: var(--logo-title-font);
-        font-weight: 700;
-    }
-}
-.form-img{
-  width: 100px;
-  height: 100px;  
-}
-.form-field{
+  & .item {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  }
 
-    & .item {
-        min-width: 100%;
-    }
+  & .description {
+    font-family: var(--logo-title-font);
+    font-weight: 700;
+  }
+}
+.form-img {
+  width: 100px;
+  height: 100px;
+}
+.form-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  & .item {
+    min-width: 100%;
+  }
 }
 
 .form-input {
@@ -104,7 +108,6 @@
   min-height: 20px;
   border: 1px solid var(--hero-background);
   border-radius: 4px;
-
 
   &:focus {
     border-color: var(--accent-color);
@@ -133,31 +136,30 @@
   }
 
   .form {
-
-  &-title {
-    max-width: 100%;
-    @include font(24px, 30px);
-  }
-
-  &-label {
-    @include font(14px, 16px);
-  }
-}
-
-.form-img{
-  width: 120px;
-  height: 120px;  
-}
-  
-  .form-field{
-      margin-top: 20px;
-
-    & .item{
-        min-width: 50%;
+    &-title {
+      max-width: 100%;
+      @include font(24px, 30px);
     }
-    & .coment{
-        min-width: 100%;
-        margin-top: 15px;
+
+    &-label {
+      @include font(14px, 16px);
+    }
+  }
+
+  .form-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .form-field {
+    margin-top: 20px;
+
+    & .item {
+      min-width: 50%;
+    }
+    & .coment {
+      min-width: 100%;
+      margin-top: 15px;
     }
   }
 }
@@ -166,12 +168,12 @@
   .modal {
     max-width: 528px;
   }
-.form-list{
-  @include font(16px, 20px);  
-}
+  .form-list {
+    @include font(16px, 20px);
+  }
 
-.form-img{
-  width: 150px;
-  height: 150px;  
-} 
+  .form-img {
+    width: 150px;
+    height: 150px;
+  }
 }
