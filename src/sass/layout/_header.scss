@@ -17,7 +17,11 @@
 
     background-image: url(../images/mobile/logo-mobile.png);
     background-color: transparent;
+
+    animation-duration: 1000ms;
+    animation-iteration-count: 2;
   }
+
 
   .burger-btn {
     @include screen('desktop') {
