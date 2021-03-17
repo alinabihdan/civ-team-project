@@ -21,7 +21,7 @@
   opacity: 0;
 }
 
-.modal-franchise  {
+.modal-franchise {
   margin-bottom: 50px;
   position: relative;
   width: 100%;
@@ -29,12 +29,11 @@
 
   background-color: var(--hero-background);
   border-radius: 20px;
-  overflow-y: scroll;
 }
 
 .franchise-form {
-    @include font(16px, 20px);
-    color: var(--accent-color);
+  @include font(16px, 20px);
+  color: var(--accent-color);
 }
 
 .franchise-close {
@@ -48,29 +47,28 @@
 }
 
 .franchise-title {
-    margin: 0 auto;
-    margin-bottom: 10px;
-    font-size: calc(14px + 4 * ((100vw - 320px) / (1280 - 320)));
-    font-family: var(--logo-title-font);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.13;
-    letter-spacing: 0,04;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--accent-color);
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / (1280 - 320)));
+  font-family: var(--logo-title-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.13;
+  letter-spacing: 0, 04;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-color);
 }
 
-.franchise-subtitle{
+.franchise-subtitle {
   font-family: var(--main-font);
   color: var(--accent-contacts-btn-red);
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   font-size: calc(14px + 4 * ((100vw - 320px) / (1280 - 320)));
-
 }
-    
+
 .modal-input {
   display: block;
   width: 100%;
@@ -90,7 +88,7 @@
 }
 
 // .modal-label {
-  
+
 // }
 
 .modal-select {
