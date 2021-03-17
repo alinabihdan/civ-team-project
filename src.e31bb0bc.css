@@ -1944,11 +1944,6 @@ img.mfp-img {
   width: 33px;
   background-image: url("/icon-milk.d9a88774.png");
 }
-@media only screen and (min-width: 768px) {
-  .advantages-item.milk::before {
-    width: 36px;
-  }
-}
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .advantages-item.milk::before {
@@ -3051,7 +3046,6 @@ img.mfp-img {
   padding: 20px 10px;
   background-color: var(--hero-background);
   border-radius: 20px;
-  overflow-y: scroll;
 }
 
 .franchise-form {
