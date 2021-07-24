@@ -22,7 +22,6 @@
     animation-iteration-count: 2;
   }
 
-
   .burger-btn {
     @include screen('desktop') {
       display: none;
